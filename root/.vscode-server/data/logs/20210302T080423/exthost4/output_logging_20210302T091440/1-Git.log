@@ -13,3 +13,21 @@ fatal: no upstream configured for branch 'main'
 > git remote --verbose
 > git config --get commit.template
 > git check-ignore -v -z --stdin
+> git add -A -- .
+> git commit --quiet --allow-empty-message --file -
+warning: The last gc run reported the following. Please correct the root cause
+and remove .git/gc.log.
+Automatic cleanup will not be performed until the file is removed.
+
+error: pack-objects died of signal 9
+fatal: failed to run repack
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+fatal: no upstream configured for branch 'main'
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git config --get commit.template
+> git add -A -- .
