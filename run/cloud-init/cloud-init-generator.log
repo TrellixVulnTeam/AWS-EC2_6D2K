@@ -1,0 +1,9 @@
+/usr/lib/systemd/system-generators/cloud-init-generator normal=/run/systemd/generator early=/run/systemd/generator.early late=/run/systemd/generator.late
+kernel command line (/proc/cmdline): BOOT_IMAGE=(hd0,gpt2)/boot/vmlinuz-4.18.0-240.1.1.el8_3.x86_64 root=UUID=949779ce-46aa-434e-8eb0-852514a5d69e ro console=ttyS0,115200n8 console=tty0 net.ifnames=0 rd.blacklist=nouveau nvme_core.io_timeout=4294967295 crashkernel=auto
+kernel_cmdline found unset
+etc_file found unset
+default found enabled
+checking for datasource
+ds-identify rc=0
+ds-identify _RET=found
+enabled via /run/systemd/generator.early/multi-user.target.wants/cloud-init.target -> /lib/systemd/system/cloud-init.target

@@ -1,0 +1,17 @@
+0.5 (2017-11-07)
+- check if /dev/rtc exists before calling hwclock
+- specify RTC device in hwclock call
+
+0.4 (2015-11-10)
+- fix handling of duplicate entries in ntp-units.d (rhbz#1279760)
+- update installation instructions for recent systemd versions
+
+0.3 (2015-05-11)
+- fix setting /etc/localtime SELinux context (Adam Williamson)
+
+0.2 (2015-01-21)
+- add man page
+- fix creating timezone symlink with maximum length
+
+0.1 (2014-11-19)
+- initial release

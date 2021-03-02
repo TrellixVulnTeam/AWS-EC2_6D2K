@@ -1,0 +1,27 @@
+The microcode_ctl package contains microcode files (vendor-provided binary data
+and/or code in proprietary format that affects behaviour of a device) for Intel
+CPUs that may be loaded into the CPU during boot.
+
+This directory contains information regarding various aspects of the provided
+microcode files and their usage.
+
+ * LICENSE.intel-ucode
+   "license" file from the Intel x86 CPU microcode archive.
+ * README
+   This file.
+ * README.caveats
+   Caveats (mechanism for enabling/disabling usage of sets of microcode files
+   based on caveat configuration and user preferences) documentation.
+   Also contains general information about microcode update behaviour and links
+   with additional information about the relevant microarchitectural
+   vulnerabilities.
+ * README.intel-ucode
+   "README.md" file from the Intel x86 CPU microcode archive.
+ * RELEASE_NOTES.intel-ucode
+   "releasenote.md" file from the Intel x86 CPU microcode archive.
+ * SECURITY.intel-ucode
+   "security.md" file from the Intel x86 CPU microcode archive.
+ * SUMMARY.intel-ucode
+   Information about supplied microcode files extracted from their headers.
+ * caveats
+   Directory that contains readme files for specific caveats.

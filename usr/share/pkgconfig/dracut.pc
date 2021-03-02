@@ -1,0 +1,6 @@
+Name: dracut
+Description: dracut
+Version: a028746d36d4456759a13f8ba5eab1cc3800f668
+dracutdir=/usr/lib/dracut
+dracutmodulesdir=/usr/lib/dracut/modules.d
+dracutconfdir=/usr/lib/dracut/dracut.conf.d

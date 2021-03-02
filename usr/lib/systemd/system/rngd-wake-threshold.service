@@ -1,0 +1,13 @@
+[Unit]
+Description=Hardware RNG Entropy Gatherer Wake threshold service
+Before=rngd.service
+
+[Service]
+CapabilityBoundingSet=CAP_SYS_ADMIN
+AmbientCapabilities=CAP_SYS_ADMIN
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/sh -c "PSIZE=$(cat /proc/sys/kernel/random/poolsize); let THRESH=$PSIZE*3/4; echo $THRESH>/proc/sys/kernel/random/write_wakeup_threshold"
+
+[Install]
+WantedBy=sysinit.target

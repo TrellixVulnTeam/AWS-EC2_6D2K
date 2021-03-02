@@ -1,0 +1,4 @@
+amdgpu.ko
+gma500_gfx.ko
+mgag200.ko
+radeon.ko

@@ -1,0 +1,5 @@
+NOZEROCONF=yes
+
+# Created by cloud-init on instance boot automatically, do not edit.
+#
+NETWORKING=yes

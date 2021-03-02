@@ -1,0 +1,14 @@
+[Unit]
+Description=Hardware RNG Entropy Gatherer Daemon
+Requires=rngd-wake-threshold.service
+
+[Service]
+User=rngd
+Group=rngd
+CapabilityBoundingSet=CAP_SYS_ADMIN
+AmbientCapabilities=CAP_SYS_ADMIN
+ExecStart=/sbin/rngd -f --fill-watermark=0
+TimeoutStartSec=60s
+
+[Install]
+WantedBy=sysinit.target

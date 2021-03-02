@@ -1,0 +1,4 @@
+path intel-ucode/*
+vendor GenuineIntel
+dmi mode=fail-equal key=bios_vendor val="Dell Inc."
+disable early late

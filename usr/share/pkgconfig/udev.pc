@@ -1,0 +1,5 @@
+Name: udev
+Description: udev
+Version: 239 (239-41.el8_3.1)
+
+udevdir=/usr/lib/udev

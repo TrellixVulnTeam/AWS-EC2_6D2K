@@ -1,0 +1,221 @@
+Path                                        | Offset  | Ext. Offset | CPUID   | Platform ID Mask | Revision  | Date       | Checksum   | Codenames
+--------------------------------------------+---------+-------------+---------+------------------+-----------+------------+------------+--------------------------------------------------------------------------------------------------------------
+intel-06-2d-07/intel-ucode/06-2d-07         | 0x0     | -           | 0x206d7 | 0x6d             | 0x71a     | 2020-03-24 | 0xac8779f8 | Sandy Bridge-E/EN/EP C2/M1
+intel-06-4e-03/intel-ucode/06-4e-03         | 0x0     | -           | 0x406e3 | 0xc0             | 0xe2      | 2020-07-14 | 0xd2e1aeb7 | Skylake-U/U 2+3e/Y D0/K1
+intel-06-4f-01/intel-ucode/06-4f-01         | 0x0     | -           | 0x406f1 | 0xef             | 0xb000038 | 2019-06-18 | 0xe705e458 | Broadwell-E/EP/EX/ML B0/M0/R0
+intel-06-55-04/intel-ucode/06-55-04         | 0x0     | -           | 0x50654 | 0xb7             | 0x2006a0a | 2020-12-31 | 0xa8bc2c73 | Skylake-D/SP/W/X H0/M0/M1/U0
+intel-06-5e-03/intel-ucode/06-5e-03         | 0x0     | -           | 0x506e3 | 0x36             | 0xe2      | 2020-07-14 | 0xfd2d8e22 | Skylake-H/S/Xeon E3 N0/R0/S0
+intel-06-8c-01/intel-ucode/06-8c-01         | 0x0     | -           | 0x806c1 | 0x80             | 0x68      | 2020-10-02 | 0xaf4ff3da | Tiger Lake-UP3/UP4 B1
+intel-06-8e-9e-0x-0xca/intel-ucode/06-8e-09 | 0x0     | -           | 0x806e9 | 0x10             | 0xca      | 2019-10-15 | 0x0845ac10 | Amber Lake-Y 2+2 H0
+intel-06-8e-9e-0x-0xca/intel-ucode/06-8e-09 | 0x18800 | -           | 0x806e9 | 0xc0             | 0xca      | 2019-09-26 | 0x78d29498 | Kaby Lake-U/U 2+3e/Y H0/J1
+intel-06-8e-9e-0x-0xca/intel-ucode/06-8e-0a | 0x0     | -           | 0x806ea | 0xc0             | 0xca      | 2019-10-03 | 0xb1048e10 | Coffee Lake-U 4+3e D0, Kaby Lake-R Y0
+intel-06-8e-9e-0x-0xca/intel-ucode/06-8e-0b | 0x0     | -           | 0x806eb | 0xd0             | 0xca      | 2019-10-03 | 0xc2b95181 | Whiskey Lake-U W0
+intel-06-8e-9e-0x-0xca/intel-ucode/06-8e-0c | 0x0     | -           | 0x806ec | 0x94             | 0xca      | 2019-10-03 | 0x3c7347b2 | Amber Lake-Y 4+2 V0, Comet Lake-U 4+2 V0, Whiskey Lake-U V0
+intel-06-8e-9e-0x-0xca/intel-ucode/06-9e-09 | 0x0     | -           | 0x906e9 | 0x2a             | 0xca      | 2019-10-03 | 0x2f24390b | Kaby Lake-G/H/S/X/Xeon E3 B0
+intel-06-8e-9e-0x-0xca/intel-ucode/06-9e-0a | 0x0     | -           | 0x906ea | 0x22             | 0xca      | 2019-10-03 | 0x7bc0fae1 | Coffee Lake-H/S/Xeon E U0
+intel-06-8e-9e-0x-0xca/intel-ucode/06-9e-0b | 0x0     | -           | 0x906eb | 0x02             | 0xca      | 2019-10-03 | 0x298be2d2 | Coffee Lake-E/H/S B0
+intel-06-8e-9e-0x-0xca/intel-ucode/06-9e-0c | 0x0     | -           | 0x906ec | 0x22             | 0xca      | 2019-10-03 | 0xc2fcdc8a | Coffee Lake-H/S/Xeon E P0
+intel-06-8e-9e-0x-0xca/intel-ucode/06-9e-0d | 0x0     | -           | 0x906ed | 0x22             | 0xca      | 2019-10-03 | 0x2dcd81fe | Coffee Lake-H/S/Xeon E R0
+intel-06-8e-9e-0x-dell/intel-ucode/06-8e-09 | 0x0     | -           | 0x806e9 | 0x10             | 0xde      | 2020-05-27 | 0x08079d98 | Amber Lake-Y 2+2 H0
+intel-06-8e-9e-0x-dell/intel-ucode/06-8e-09 | 0x19800 | -           | 0x806e9 | 0xc0             | 0xde      | 2020-05-27 | 0x86ed8490 | Kaby Lake-U/U 2+3e/Y H0/J1
+intel-06-8e-9e-0x-dell/intel-ucode/06-8e-0a | 0x0     | -           | 0x806ea | 0xc0             | 0xe0      | 2020-06-17 | 0xbcacee16 | Coffee Lake-U 4+3e D0, Kaby Lake-R Y0
+intel-06-8e-9e-0x-dell/intel-ucode/06-8e-0b | 0x0     | -           | 0x806eb | 0xd0             | 0xde      | 2020-06-03 | 0xd36b66d0 | Whiskey Lake-U W0
+intel-06-8e-9e-0x-dell/intel-ucode/06-8e-0c | 0x0     | -           | 0x806ec | 0x94             | 0xde      | 2020-05-18 | 0x36f78cf0 | Amber Lake-Y 4+2 V0, Comet Lake-U 4+2 V0, Whiskey Lake-U V0
+intel-06-8e-9e-0x-dell/intel-ucode/06-9e-09 | 0x0     | -           | 0x906e9 | 0x2a             | 0xde      | 2020-05-26 | 0x224e7904 | Kaby Lake-G/H/S/X/Xeon E3 B0
+intel-06-8e-9e-0x-dell/intel-ucode/06-9e-0a | 0x0     | -           | 0x906ea | 0x22             | 0xde      | 2020-05-25 | 0x76a2f81f | Coffee Lake-H/S/Xeon E U0
+intel-06-8e-9e-0x-dell/intel-ucode/06-9e-0b | 0x0     | -           | 0x906eb | 0x02             | 0xde      | 2020-05-25 | 0xdc6be1ee | Coffee Lake-E/H/S B0
+intel-06-8e-9e-0x-dell/intel-ucode/06-9e-0c | 0x0     | -           | 0x906ec | 0x22             | 0xde      | 2020-06-03 | 0x9afb648b | Coffee Lake-H/S/Xeon E P0
+intel-06-8e-9e-0x-dell/intel-ucode/06-9e-0d | 0x0     | -           | 0x906ed | 0x22             | 0xde      | 2020-05-24 | 0xbad46b57 | Coffee Lake-H/S/Xeon E R0
+intel-ucode/06-03-02                        | 0x0     | -           | 0x01632 | 0x00             | 0x2       | 1998-06-10 | 0x6aae5598 | Deschutes (PII) B0
+intel-ucode/06-05-00                        | 0x0     | -           | 0x00650 | 0x01             | 0x40      | 1999-05-25 | 0xb6a8b9b9 | Deschutes SEPP (PII) A0
+intel-ucode/06-05-00                        | 0x800   | -           | 0x00650 | 0x02             | 0x41      | 1999-05-25 | 0xbc120ef5 | Deschutes Mini-Cart (PII) A0
+intel-ucode/06-05-00                        | 0x1000  | -           | 0x00650 | 0x08             | 0x45      | 1999-05-25 | 0x429c2f70 | Deschutes MMC1/MMC2 (PII) A0
+intel-ucode/06-05-01                        | 0x0     | -           | 0x00651 | 0x01             | 0x40      | 1999-05-25 | 0xf400b4ac | Deschutes SECC/SECC2 (PII) A1, Deschutes SEPP (PII) A1
+intel-ucode/06-05-02                        | 0x0     | -           | 0x00652 | 0x01             | 0x2a      | 1999-05-12 | 0xc8b34cc7 | Deschutes SECC/SECC2 (PII) B0
+intel-ucode/06-05-02                        | 0x800   | -           | 0x00652 | 0x02             | 0x2c      | 1999-05-17 | 0x05073130 | Deschutes Mini-Cart (PII) B0
+intel-ucode/06-05-02                        | 0x1000  | -           | 0x00652 | 0x04             | 0x2b      | 1999-05-12 | 0xd40d4baf | Deschutes SECC (PII) B0
+intel-ucode/06-05-03                        | 0x0     | -           | 0x00653 | 0x01             | 0x10      | 1999-06-28 | 0x4b6dfc5e | Deschutes SECC/SECC2 (PII) B1
+intel-ucode/06-05-03                        | 0x800   | -           | 0x00653 | 0x02             | 0xc       | 1999-05-18 | 0x810fe1ab | Deschutes Mini-Cart (PII) B1
+intel-ucode/06-05-03                        | 0x1000  | -           | 0x00653 | 0x04             | 0xb       | 1999-05-20 | 0xe3f50f82 | Deschutes SECC (PII) B1
+intel-ucode/06-05-03                        | 0x1800  | -           | 0x00653 | 0x08             | 0xd       | 1999-05-18 | 0xc28f9258 | Deschutes MMC1/MMC2 (PII) B1
+intel-ucode/06-06-00                        | 0x0     | -           | 0x00660 | 0x01             | 0xa       | 1999-05-05 | 0x05b795f4 | Mendocino SEPP (PII) A0
+intel-ucode/06-06-05                        | 0x0     | -           | 0x00665 | 0x10             | 0x3       | 1999-05-05 | 0x2b9733f1 | Mendocino PPGA (PII) B0
+intel-ucode/06-06-0a                        | 0x0     | -           | 0x0066a | 0x02             | 0xc       | 1999-05-05 | 0x1d9d265a | Dixon Mini-Cart (PII) A1
+intel-ucode/06-06-0a                        | 0x800   | -           | 0x0066a | 0x08             | 0xd       | 1999-05-05 | 0xbb94bae6 | Dixon MMC1/MMC2 (PII) A1
+intel-ucode/06-06-0a                        | 0x1000  | -           | 0x0066a | 0x20             | 0xb       | 1999-05-05 | 0x5320efc2 | Dixon Micro-PGA1 (PII) A1
+intel-ucode/06-06-0d                        | 0x0     | -           | 0x0066d | 0x02             | 0x5       | 1999-03-12 | 0x270b86cf | Dixon Mini-Cart (PII) A1
+intel-ucode/06-06-0d                        | 0x800   | -           | 0x0066d | 0x08             | 0x6       | 1999-03-12 | 0x5a11f8b1 | Dixon MMC1/MMC2 (PII) A1
+intel-ucode/06-06-0d                        | 0x1000  | -           | 0x0066d | 0x20             | 0x7       | 1999-05-05 | 0x35ba5e6e | Dixon Micro-PGA1 (PII) A1
+intel-ucode/06-07-01                        | 0x0     | -           | 0x00671 | 0x04             | 0x14      | 1998-08-11 | 0x83239dd8 | Tanner SECC (PIII) B0
+intel-ucode/06-07-02                        | 0x0     | -           | 0x00672 | 0x04             | 0x38      | 1999-09-22 | 0xffd6aa2a | Tanner SECC (PIII) B0
+intel-ucode/06-07-03                        | 0x0     | -           | 0x00673 | 0x04             | 0x2e      | 1999-09-10 | 0xa5945abf | Tanner SECC (PIII) C0
+intel-ucode/06-08-01                        | 0x0     | -           | 0x00681 | 0x01             | 0xd       | 1999-09-21 | 0x31708166 | Coppermine SECC/SECC2 (PIII) A2
+intel-ucode/06-08-01                        | 0x800   | -           | 0x00681 | 0x04             | 0x10      | 1999-09-21 | 0x04387de5 | Cascades SECC (PIII) A2
+intel-ucode/06-08-01                        | 0x1000  | -           | 0x00681 | 0x08             | 0xf       | 1999-09-21 | 0x73f2cca2 | Coppermine MMC2 (PIII) A2
+intel-ucode/06-08-01                        | 0x1800  | -           | 0x00681 | 0x10             | 0x11      | 1999-09-21 | 0xfc16538d | Coppermine FC-PGA (PIII) A2
+intel-ucode/06-08-01                        | 0x2000  | -           | 0x00681 | 0x20             | 0xe       | 1999-09-21 | 0x02aa9e53 | Coppermine Micro-PGA2 (PIII) A2
+intel-ucode/06-08-03                        | 0x0     | -           | 0x00683 | 0x08             | 0x8       | 1999-10-15 | 0x2942e387 | Coppermine MMC2 (PIII) B0
+intel-ucode/06-08-03                        | 0x800   | -           | 0x00683 | 0x20             | 0x7       | 1999-10-15 | 0x1c5efd4b | Coppermine Micro-PGA2 (PIII) B0
+intel-ucode/06-08-06                        | 0x0     | -           | 0x00686 | 0x01             | 0x7       | 2000-05-05 | 0x87aa303f | Coppermine SECC/SECC2 (PIII) C0
+intel-ucode/06-08-06                        | 0x800   | -           | 0x00686 | 0x02             | 0xa       | 2000-05-04 | 0xf3bb1079 | Coppermine (PIII) C0
+intel-ucode/06-08-06                        | 0x1000  | -           | 0x00686 | 0x04             | 0x2       | 2000-05-04 | 0x332c50fc | Cascades SECC (PIII) C0
+intel-ucode/06-08-06                        | 0x1800  | -           | 0x00686 | 0x10             | 0x8       | 2000-05-05 | 0xea2b7b61 | Coppermine FC-PGA (PIII) C0
+intel-ucode/06-08-06                        | 0x2000  | -           | 0x00686 | 0x80             | 0xc       | 2000-05-04 | 0xb8f53b16 | Coppermine (PIII) C0
+intel-ucode/06-08-0a                        | 0x0     | -           | 0x0068a | 0x10             | 0x1       | 2000-11-02 | 0x80fc9e3b | Coppermine (PIII) D0
+intel-ucode/06-08-0a                        | 0x800   | -           | 0x0068a | 0x20             | 0x4       | 2000-12-07 | 0x995ec216 | Coppermine (PIII) D0
+intel-ucode/06-08-0a                        | 0x1000  | -           | 0x0068a | 0x80             | 0x5       | 2000-12-07 | 0xb82bbbc1 | Coppermine (PIII) D0
+intel-ucode/06-09-05                        | 0x0     | -           | 0x00695 | 0x10             | 0x7       | 2004-11-09 | 0xf7d0461f | Banias (P-M) B1
+intel-ucode/06-09-05                        | 0x800   | -           | 0x00695 | 0x20             | 0x7       | 2004-11-09 | 0xf7d0460f | Banias (P-M) B1
+intel-ucode/06-09-05                        | 0x1000  | -           | 0x00695 | 0x80             | 0x47      | 2004-11-09 | 0xa0324f3b | Banias (P-M) B1
+intel-ucode/06-0a-00                        | 0x0     | -           | 0x006a0 | 0x04             | 0x3       | 2000-01-10 | 0xdff45617 | Cascades (PIII) A0
+intel-ucode/06-0a-01                        | 0x0     | -           | 0x006a1 | 0x04             | 0x1       | 2000-03-06 | 0xdac0a4cd | Cascades (PIII) A1
+intel-ucode/06-0b-01                        | 0x0     | -           | 0x006b1 | 0x10             | 0x1c      | 2001-02-15 | 0x6506e1cf | Tualatin FC-PGA2 (PIII) A1
+intel-ucode/06-0b-01                        | 0x800   | -           | 0x006b1 | 0x20             | 0x1d      | 2001-02-20 | 0x6d9b5661 | Tualatin Micro-PGA2 (PIII) A1
+intel-ucode/06-0b-04                        | 0x0     | -           | 0x006b4 | 0x10             | 0x1       | 2002-01-10 | 0x58213e6a | Tualatin FC-PGA2 (PIII) B1
+intel-ucode/06-0b-04                        | 0x800   | -           | 0x006b4 | 0x20             | 0x2       | 2002-01-11 | 0xf512ec8f | Tualatin Micro-PGA2 (PIII) B1
+intel-ucode/06-0d-06                        | 0x0     | -           | 0x006d6 | 0x20             | 0x18      | 2004-10-17 | 0xb7b66d41 | Dothan (P-M) B0
+intel-ucode/06-0e-08                        | 0x0     | -           | 0x006e8 | 0x20             | 0x39      | 2005-11-15 | 0x00e9d6a3 | Yonah C0
+intel-ucode/06-0e-0c                        | 0x0     | -           | 0x006ec | 0x20             | 0x54      | 2006-05-01 | 0x7066b518 | Yonah E0
+intel-ucode/06-0e-0c                        | 0x1000  | -           | 0x006ec | 0x80             | 0x59      | 2006-09-12 | 0x75996a3e | Yonah E0
+intel-ucode/06-0f-02                        | 0x0     | -           | 0x006f2 | 0x01             | 0x5d      | 2010-10-02 | 0x9384a573 | Conroe (Merom) L2, Conroe Xeon (Merom) L2
+intel-ucode/06-0f-02                        | 0x1000  | -           | 0x006f2 | 0x20             | 0x5c      | 2010-10-02 | 0xc335a60f | Merom L2
+intel-ucode/06-0f-06                        | 0x0     | -           | 0x006f6 | 0x01             | 0xd0      | 2010-09-30 | 0xb61ec71a | Conroe (Merom) B2, Conroe Xeon (Merom) B2
+intel-ucode/06-0f-06                        | 0x1000  | -           | 0x006f6 | 0x04             | 0xd2      | 2010-10-01 | 0x6618cfff | Woodcrest (Merom) B2
+intel-ucode/06-0f-06                        | 0x2000  | -           | 0x006f6 | 0x20             | 0xd1      | 2010-10-01 | 0xc3efba8f | Merom B2
+intel-ucode/06-0f-07                        | 0x0     | -           | 0x006f7 | 0x10             | 0x6a      | 2010-10-02 | 0x9911aaf2 | Kentsfield (Merom) B3, Kentsfield Xeon (Merom) B3
+intel-ucode/06-0f-07                        | 0x1000  | -           | 0x006f7 | 0x40             | 0x6b      | 2010-10-02 | 0xcc4deed3 | Clovertown (Merom) B3
+intel-ucode/06-0f-0a                        | 0x0     | -           | 0x006fa | 0x80             | 0x95      | 2010-10-02 | 0x9f4b38d8 | Merom E1
+intel-ucode/06-0f-0b                        | 0x0     | -           | 0x006fb | 0x01             | 0xba      | 2010-10-03 | 0x08707b60 | Conroe (Merom) G0, Conroe Xeon (Merom) G0
+intel-ucode/06-0f-0b                        | 0x1000  | -           | 0x006fb | 0x04             | 0xbc      | 2010-10-03 | 0x9394765a | Woodcrest (Merom) G0
+intel-ucode/06-0f-0b                        | 0x2000  | -           | 0x006fb | 0x08             | 0xbb      | 2010-10-03 | 0xe7fbf398 | Tigerton (Merom) G0
+intel-ucode/06-0f-0b                        | 0x3000  | -           | 0x006fb | 0x10             | 0xba      | 2010-10-03 | 0xed247070 | Kentsfield (Merom) G0, Kentsfield Xeon (Merom) G0
+intel-ucode/06-0f-0b                        | 0x4000  | -           | 0x006fb | 0x20             | 0xba      | 2010-10-03 | 0x9777492e | Merom G0
+intel-ucode/06-0f-0b                        | 0x5000  | -           | 0x006fb | 0x40             | 0xbc      | 2010-10-03 | 0xf1a7a484 | Clovertown (Merom) G0
+intel-ucode/06-0f-0b                        | 0x6000  | -           | 0x006fb | 0x80             | 0xba      | 2010-10-03 | 0xf953dc67 | Merom G0
+intel-ucode/06-0f-0d                        | 0x0     | -           | 0x006fd | 0x01             | 0xa4      | 2010-10-02 | 0x9ace6116 | Conroe (Merom) M0
+intel-ucode/06-0f-0d                        | 0x1000  | -           | 0x006fd | 0x20             | 0xa4      | 2010-10-02 | 0x9ace60f7 | Merom M0
+intel-ucode/06-0f-0d                        | 0x2000  | -           | 0x006fd | 0x80             | 0xa4      | 2010-10-02 | 0x9ace6097 | Merom M0
+intel-ucode/06-16-01                        | 0x0     | -           | 0x10661 | 0x01             | 0x43      | 2010-10-04 | 0x4b64ba3a | Conroe-L (Merom) A1
+intel-ucode/06-16-01                        | 0x1000  | -           | 0x10661 | 0x02             | 0x42      | 2010-10-04 | 0x0e219073 | Merom-L A1
+intel-ucode/06-16-01                        | 0x2000  | -           | 0x10661 | 0x80             | 0x44      | 2010-10-04 | 0x53baadcc | Merom-L A1
+intel-ucode/06-17-06                        | 0x0     | -           | 0x10676 | 0x01             | 0x60f     | 2010-09-29 | 0x8fe1a246 | Penryn C0, Wolfdale (Penryn) M0, Wolfdale Xeon (Penryn) C0, Yorkfield (Penryn) C0, Yorkfield Xeon (Penryn) C0
+intel-ucode/06-17-06                        | 0x1000  | -           | 0x10676 | 0x04             | 0x60f     | 2010-09-29 | 0x8fe1a243 | Wolfdale-DP (Penryn) M0
+intel-ucode/06-17-06                        | 0x2000  | -           | 0x10676 | 0x10             | 0x60f     | 2010-09-29 | 0x8fe1a237 | Penryn C0, Wolfdale (Penryn) M0, Wolfdale Xeon (Penryn) C0, Yorkfield (Penryn) C0, Yorkfield Xeon (Penryn) C0
+intel-ucode/06-17-06                        | 0x3000  | -           | 0x10676 | 0x40             | 0x60f     | 2010-09-29 | 0x8fe1a207 | Harpertown (Penryn) C0
+intel-ucode/06-17-06                        | 0x4000  | -           | 0x10676 | 0x80             | 0x60f     | 2010-09-29 | 0x8fe1a1c7 | Penryn C0, Wolfdale (Penryn) M0, Wolfdale Xeon (Penryn) C0, Yorkfield (Penryn) C0, Yorkfield Xeon (Penryn) C0
+intel-ucode/06-17-07                        | 0x0     | -           | 0x10677 | 0x10             | 0x70a     | 2010-09-29 | 0xf3710db6 | Yorkfield (Penryn) C1/M1, Yorkfield Xeon (Penryn) C1/M1
+intel-ucode/06-17-0a                        | 0x0     | -           | 0x1067a | 0x11             | 0xa0b     | 2010-09-28 | 0xb007e7e3 | Wolfdale (Penryn) E0/R0
+intel-ucode/06-17-0a                        | 0x2000  | -           | 0x1067a | 0x44             | 0xa0b     | 2010-09-28 | 0xb007e7b0 | Harpertown (Penryn) E0, Wolfdale-DP (Penryn) E0
+intel-ucode/06-17-0a                        | 0x4000  | -           | 0x1067a | 0xa0             | 0xa0b     | 2010-09-28 | 0xb007e754 | Wolfdale (Penryn) E0/R0
+intel-ucode/06-1a-04                        | 0x0     | -           | 0x106a4 | 0x03             | 0x12      | 2013-06-21 | 0x9383a5f1 | Bloomfield (Nehalem) C0
+intel-ucode/06-1a-05                        | 0x0     | -           | 0x106a5 | 0x03             | 0x1d      | 2018-05-11 | 0xab179397 | Bloomfield (Nehalem) D0, Bloomfield Xeon (Nehalem)-EP/WS D0
+intel-ucode/06-1c-02                        | 0x0     | -           | 0x106c2 | 0x01             | 0x217     | 2009-04-10 | 0xd987bc76 | Silverthorne (Bonnell) C0
+intel-ucode/06-1c-02                        | 0x1400  | -           | 0x106c2 | 0x04             | 0x218     | 2009-04-10 | 0x8fb7c1ba | Diamondville (Bonnell) C0
+intel-ucode/06-1c-02                        | 0x2800  | -           | 0x106c2 | 0x08             | 0x219     | 2009-04-10 | 0x556338c1 | Diamondville (Bonnell) C0
+intel-ucode/06-1c-0a                        | 0x0     | -           | 0x106ca | 0x01             | 0x107     | 2009-08-25 | 0xf851a3d9 | Pineview (Bonnell) A0
+intel-ucode/06-1c-0a                        | 0x1400  | -           | 0x106ca | 0x04             | 0x107     | 2009-08-25 | 0x7deb58b2 | Pineview (Bonnell) A0
+intel-ucode/06-1c-0a                        | 0x2800  | -           | 0x106ca | 0x08             | 0x107     | 2009-08-25 | 0xbe667ca5 | Pineview (Bonnell) B0
+intel-ucode/06-1c-0a                        | 0x3c00  | -           | 0x106ca | 0x10             | 0x107     | 2009-08-25 | 0x482cae0e | Pineview (Bonnell) B0
+intel-ucode/06-1d-01                        | 0x0     | -           | 0x106d1 | 0x08             | 0x29      | 2010-09-30 | 0x2408d9a1 | Dunnington (Penryn) A1
+intel-ucode/06-1e-05                        | 0x0     | -           | 0x106e5 | 0x13             | 0xa       | 2018-05-08 | 0xb16fceeb | Clarksfield (Nehalem) B1, Lynnfield (Nehalem) B1, Lynnfield Xeon (Nehalem) B1
+intel-ucode/06-25-02                        | 0x0     | -           | 0x20652 | 0x12             | 0x11      | 2018-05-08 | 0x6e121a49 | Westmere C2/K0
+intel-ucode/06-25-05                        | 0x0     | -           | 0x20655 | 0x92             | 0x7       | 2018-04-23 | 0x8b585c97 | Arrandale (Westmere) K0, Clarkdale (Westmere) K0
+intel-ucode/06-26-01                        | 0x0     | -           | 0x20661 | 0x01             | 0x104     | 2009-10-23 | 0x38cb12b9 | Lincroft (Bonnell) C0
+intel-ucode/06-26-01                        | 0x1400  | -           | 0x20661 | 0x02             | 0x105     | 2011-07-18 | 0x52558795 | Tunnell Creek (Bonnell) B0/B1
+intel-ucode/06-2a-07                        | 0x0     | -           | 0x206a7 | 0x12             | 0x2f      | 2019-02-17 | 0x8d15df31 | Sandy Bridge-Xeon E3 D2/J1/Q0
+intel-ucode/06-2c-02                        | 0x0     | -           | 0x206c2 | 0x03             | 0x1f      | 2018-05-08 | 0x77dada73 | Gulftown (Westmere) B1, Westmere-EP-EP B1, Westmere-WS-WS B1
+intel-ucode/06-2d-06                        | 0x0     | -           | 0x206d6 | 0x6d             | 0x621     | 2020-03-04 | 0x7ed51e79 | Sandy Bridge-E/EN/EP C1/M0
+intel-ucode/06-2d-07                        | 0x0     | -           | 0x206d7 | 0x6d             | 0x714     | 2018-05-08 | 0x5a3bf81f | Sandy Bridge-E/EN/EP C2/M1
+intel-ucode/06-2e-06                        | 0x0     | -           | 0x206e6 | 0x04             | 0xd       | 2018-05-15 | 0x09b7b395 | Nehalem-EX D0
+intel-ucode/06-2f-02                        | 0x0     | -           | 0x206f2 | 0x05             | 0x3b      | 2018-05-16 | 0x28612ac4 | Westmere-EX-EX A2
+intel-ucode/06-37-08                        | 0x0     | -           | 0x30678 | 0x02             | 0x838     | 2019-04-22 | 0x6bf2e4c4 | Valleyview C0
+intel-ucode/06-37-08                        | 0xcc00  | -           | 0x30678 | 0x0c             | 0x838     | 2019-04-22 | 0x2fcbb165 | Valleyview C0
+intel-ucode/06-37-09                        | 0x0     | -           | 0x30679 | 0x0f             | 0x90c     | 2019-04-23 | 0xb8ce1968 | Valleyview D0
+intel-ucode/06-3a-09                        | 0x0     | -           | 0x306a9 | 0x12             | 0x21      | 2019-02-13 | 0xa8df9213 | Ivy Bridge E1/E2/L1
+intel-ucode/06-3c-03                        | 0x0     | -           | 0x306c3 | 0x32             | 0x28      | 2019-11-12 | 0xdbd4cfd1 | Haswell-H/S/Xeon E3 Cx/Dx
+intel-ucode/06-3d-04                        | 0x0     | -           | 0x306d4 | 0xc0             | 0x2f      | 2019-11-12 | 0x8b6d899d | Broadwell-U/Y E0/F0
+intel-ucode/06-3e-04                        | 0x0     | -           | 0x306e4 | 0xed             | 0x42e     | 2019-03-14 | 0x3c222ce1 | Ivy Bridge-E/EP C0/C1/M1/S1
+intel-ucode/06-3e-06                        | 0x0     | -           | 0x306e6 | 0xed             | 0x600     | 2013-06-19 | 0x14788dce | Ivy Bridge-EX
+intel-ucode/06-3e-07                        | 0x0     | -           | 0x306e7 | 0xed             | 0x715     | 2019-03-14 | 0xad89ac0d | Ivy Bridge-EX D1
+intel-ucode/06-3f-02                        | 0x0     | -           | 0x306f2 | 0x6f             | 0x44      | 2020-05-27 | 0xae06db92 | Haswell-E/EN/EP/EP 4S C0/C1/M1/R2
+intel-ucode/06-3f-04                        | 0x0     | -           | 0x306f4 | 0x80             | 0x16      | 2019-06-17 | 0x0fab37d5 | Haswell-EX E0
+intel-ucode/06-45-01                        | 0x0     | -           | 0x40651 | 0x72             | 0x26      | 2019-11-12 | 0x7784160a | Haswell-U Cx/Dx
+intel-ucode/06-46-01                        | 0x0     | -           | 0x40661 | 0x32             | 0x1c      | 2019-11-12 | 0xd552a842 | Haswell-H/R Cx/Dx
+intel-ucode/06-47-01                        | 0x0     | -           | 0x40671 | 0x22             | 0x22      | 2019-11-12 | 0x00b9f4b1 | Broadwell-H/S/Xeon E3 E0/G0
+intel-ucode/06-4c-03                        | 0x0     | -           | 0x406c3 | 0x01             | 0x368     | 2019-04-23 | 0xce4070dc | Cherry View C0
+intel-ucode/06-4c-04                        | 0x0     | -           | 0x406c4 | 0x01             | 0x411     | 2019-04-23 | 0xabe7bd38 | Cherry View D0
+intel-ucode/06-4d-08                        | 0x0     | -           | 0x406d8 | 0x01             | 0x12d     | 2019-09-16 | 0x12d03bc2 | Avoton B0/C0
+intel-ucode/06-4e-03                        | 0x0     | -           | 0x406e3 | 0xc0             | 0xd6      | 2019-10-03 | 0x3d233333 | Skylake-U/U 2+3e/Y D0/K1
+intel-ucode/06-55-03                        | 0x0     | -           | 0x50653 | 0x97             | 0x1000159 | 2020-06-18 | 0x8a7cb578 | Skylake-SP B1
+intel-ucode/06-55-04                        | 0x0     | -           | 0x50654 | 0xb7             | 0x2000064 | 2019-07-31 | 0x8e7c22b2 | Skylake-D/SP/W/X H0/M0/M1/U0
+intel-ucode/06-55-06                        | 0x0     | -           | 0x50656 | 0xbf             | 0x4003006 | 2020-12-31 | 0xcd2cfd82 | Cascade Lake-SP B0
+intel-ucode/06-55-07                        | 0x0     | -           | 0x50657 | 0xbf             | 0x5003006 | 2020-12-31 | 0xb36fd6de | Cascade Lake-SP/W/X B1/L1
+intel-ucode/06-55-0b                        | 0x0     | -           | 0x5065b | 0xbf             | 0x700001e | 2020-08-20 | 0x28930367 | Cooper Lake-SP A1
+intel-ucode/06-56-02                        | 0x0     | -           | 0x50662 | 0x10             | 0x1c      | 2019-06-17 | 0x6a540eaf | Broadwell-DE V1
+intel-ucode/06-56-03                        | 0x0     | -           | 0x50663 | 0x10             | 0x7000019 | 2019-06-17 | 0xc5e77ec6 | Broadwell-DE V2/V3
+intel-ucode/06-56-04                        | 0x0     | -           | 0x50664 | 0x10             | 0xf000017 | 2019-06-17 | 0x43c2ad6b | Broadwell-DE Y0
+intel-ucode/06-56-05                        | 0x0     | -           | 0x50665 | 0x10             | 0xe00000f | 2019-06-17 | 0x5e04dbca | Broadwell-NS A0/A1, Hewitt Lake (Broadwell) A1
+intel-ucode/06-5c-02                        | 0x0     | -           | 0x506c2 | 0x01             | 0x14      | 2018-05-11 | 0xbd3490b6 | Broxton C0
+intel-ucode/06-5c-09                        | 0x0     | -           | 0x506c9 | 0x03             | 0x40      | 2020-02-27 | 0x2fc3d618 | Apollo Lake D0
+intel-ucode/06-5c-0a                        | 0x0     | -           | 0x506ca | 0x03             | 0x1e      | 2020-02-27 | 0xf8a4d999 | Apollo Lake B1/F1
+intel-ucode/06-5e-03                        | 0x0     | -           | 0x506e3 | 0x36             | 0xd6      | 2019-10-03 | 0x152b6526 | Skylake-H/S/Xeon E3 N0/R0/S0
+intel-ucode/06-5f-01                        | 0x0     | -           | 0x506f1 | 0x01             | 0x2e      | 2019-03-21 | 0x4f7008d6 | Denverton B0
+intel-ucode/06-66-03                        | 0x0     | -           | 0x60663 | 0x80             | 0x2a      | 2018-04-17 | 0xc7b6f35c | Cannon Lake-U D0
+intel-ucode/06-7a-01                        | 0x0     | -           | 0x706a1 | 0x01             | 0x34      | 2020-06-09 | 0xfe4655b4 | Gemini Lake B0
+intel-ucode/06-7a-08                        | 0x0     | -           | 0x706a8 | 0x01             | 0x18      | 2020-06-09 | 0x1d9a5dfe | Gemini Lake-R R0
+intel-ucode/06-7e-05                        | 0x0     | -           | 0x706e5 | 0x80             | 0xa0      | 2020-07-30 | 0x1cd34d19 | Ice Lake-U/Y D1
+intel-ucode/06-8a-01                        | 0x0     | -           | 0x806a1 | 0x10             | 0x28      | 2020-06-26 | 0xcf8d2c0a | Lakefield B2/B3
+intel-ucode/06-8e-09                        | 0x0     | -           | 0x806e9 | 0x10             | 0xb4      | 2019-04-01 | 0x25f78252 | Amber Lake-Y 2+2 H0
+intel-ucode/06-8e-09                        | 0x18000 | -           | 0x806e9 | 0xc0             | 0xb4      | 2019-04-01 | 0x3d6ecab4 | Kaby Lake-U/U 2+3e/Y H0/J1
+intel-ucode/06-8e-0a                        | 0x0     | -           | 0x806ea | 0xc0             | 0xb4      | 2019-04-01 | 0xc8ef90c9 | Coffee Lake-U 4+3e D0, Kaby Lake-R Y0
+intel-ucode/06-8e-0b                        | 0x0     | -           | 0x806eb | 0xd0             | 0xb8      | 2019-03-30 | 0x8198d7da | Whiskey Lake-U W0
+intel-ucode/06-8e-0c                        | 0x0     | -           | 0x806ec | 0x94             | 0xb8      | 2019-03-30 | 0xa16badb5 | Amber Lake-Y 4+2 V0, Comet Lake-U 4+2 V0, Whiskey Lake-U V0
+intel-ucode/06-9e-09                        | 0x0     | -           | 0x906e9 | 0x2a             | 0xb4      | 2019-04-01 | 0xdacda920 | Kaby Lake-G/H/S/X/Xeon E3 B0
+intel-ucode/06-9e-0a                        | 0x0     | -           | 0x906ea | 0x22             | 0xb4      | 2019-04-01 | 0xb2b10713 | Coffee Lake-H/S/Xeon E U0
+intel-ucode/06-9e-0b                        | 0x0     | -           | 0x906eb | 0x02             | 0xb4      | 2019-04-01 | 0xc9ad2768 | Coffee Lake-E/H/S B0
+intel-ucode/06-9e-0c                        | 0x0     | -           | 0x906ec | 0x22             | 0xae      | 2019-02-14 | 0xfa8dd1f3 | Coffee Lake-H/S/Xeon E P0
+intel-ucode/06-9e-0d                        | 0x0     | -           | 0x906ed | 0x22             | 0xb8      | 2019-03-17 | 0xf414211b | Coffee Lake-H/S/Xeon E R0
+intel-ucode/06-a5-02                        | 0x0     | -           | 0xa0652 | 0x20             | 0xe0      | 2020-07-08 | 0x6758c669 | Comet Lake-H R1
+intel-ucode/06-a5-03                        | 0x0     | -           | 0xa0653 | 0x22             | 0xe0      | 2020-07-08 | 0x000ac1ff | Comet Lake-S 6+2 G1
+intel-ucode/06-a5-05                        | 0x0     | -           | 0xa0655 | 0x22             | 0xe0      | 2020-07-08 | 0x8d5a262b | Comet Lake-S 10+2 Q0
+intel-ucode/06-a6-00                        | 0x0     | -           | 0xa0660 | 0x80             | 0xe0      | 2020-07-08 | 0x65fda1c3 | Comet Lake-U 6+2 A0
+intel-ucode/06-a6-01                        | 0x0     | -           | 0xa0661 | 0x80             | 0xe0      | 2020-07-02 | 0x922e5412 | Comet Lake-U 6+2 v2 K0
+intel-ucode/0f-00-07                        | 0x0     | -           | 0x00f07 | 0x01             | 0x12      | 2002-07-16 | 0x39e69ff0 | Willamette (NetBurst) B2
+intel-ucode/0f-00-07                        | 0x800   | -           | 0x00f07 | 0x02             | 0x8       | 2000-11-15 | 0xb7b473e7 | Foster DP (NetBurst) B2
+intel-ucode/0f-00-0a                        | 0x0     | -           | 0x00f0a | 0x01             | 0x13      | 2002-07-16 | 0x2a2cc3cb | Willamette (NetBurst) C1
+intel-ucode/0f-00-0a                        | 0x800   | -           | 0x00f0a | 0x02             | 0x15      | 2002-08-21 | 0x63e49a0c | Foster DP (NetBurst) C1
+intel-ucode/0f-00-0a                        | 0x1000  | -           | 0x00f0a | 0x04             | 0x14      | 2002-07-16 | 0x64731550 | Willamette (NetBurst) C1
+intel-ucode/0f-01-02                        | 0x0     | -           | 0x00f12 | 0x04             | 0x2e      | 2003-05-02 | 0xb2548d0a | Willamette (NetBurst) D0
+intel-ucode/0f-02-04                        | 0x0     | -           | 0x00f24 | 0x02             | 0x1f      | 2003-06-05 | 0x1f19b59b | Prestonia (NetBurst) B0
+intel-ucode/0f-02-04                        | 0x800   | -           | 0x00f24 | 0x04             | 0x1e      | 2003-06-05 | 0x9ba58d71 | Northwood (NetBurst) B0
+intel-ucode/0f-02-04                        | 0x1000  | -           | 0x00f24 | 0x10             | 0x21      | 2003-06-10 | 0x83ed02e7 | Northwood (NetBurst) B0
+intel-ucode/0f-02-05                        | 0x0     | -           | 0x00f25 | 0x01             | 0x29      | 2004-08-11 | 0x2795ba4b | Prestonia (NetBurst) B1/M0
+intel-ucode/0f-02-05                        | 0x800   | -           | 0x00f25 | 0x02             | 0x2a      | 2004-08-11 | 0xad53035d | Gallatin (NetBurst) B1
+intel-ucode/0f-02-05                        | 0x1000  | -           | 0x00f25 | 0x04             | 0x2b      | 2004-08-11 | 0xe4dcce66 | Northwood (NetBurst) B1/M0
+intel-ucode/0f-02-05                        | 0x1800  | -           | 0x00f25 | 0x10             | 0x2c      | 2004-08-26 | 0x62d062ab | Northwood (NetBurst) B1/M0
+intel-ucode/0f-02-06                        | 0x0     | -           | 0x00f26 | 0x02             | 0x10      | 2004-08-05 | 0x17ccab58 | Gallatin (NetBurst) B1
+intel-ucode/0f-02-07                        | 0x0     | -           | 0x00f27 | 0x02             | 0x38      | 2003-06-04 | 0x6d330d4a | Prestonia (NetBurst) C1
+intel-ucode/0f-02-07                        | 0x800   | -           | 0x00f27 | 0x04             | 0x37      | 2003-06-04 | 0x972cd5fa | Northwood (NetBurst) C1
+intel-ucode/0f-02-07                        | 0x1000  | -           | 0x00f27 | 0x08             | 0x39      | 2003-06-04 | 0x823432ca | Northwood (NetBurst) C1
+intel-ucode/0f-02-09                        | 0x0     | -           | 0x00f29 | 0x02             | 0x2d      | 2004-08-11 | 0x76e56915 | Prestonia (NetBurst) D1
+intel-ucode/0f-02-09                        | 0x800   | -           | 0x00f29 | 0x04             | 0x2e      | 2004-08-11 | 0x7695d4dc | Northwood (NetBurst) D1
+intel-ucode/0f-02-09                        | 0x1000  | -           | 0x00f29 | 0x08             | 0x2f      | 2004-08-11 | 0xfdb52a5d | Northwood (NetBurst) D1
+intel-ucode/0f-03-02                        | 0x0     | -           | 0x00f32 | 0x0d             | 0xa       | 2004-05-11 | 0x2538ef0a | Prescott (NetBurst) B1
+intel-ucode/0f-03-03                        | 0x0     | -           | 0x00f33 | 0x0d             | 0xc       | 2005-04-21 | 0x58c41efd | Prescott (NetBurst) C0
+intel-ucode/0f-03-04                        | 0x0     | -           | 0x00f34 | 0x1d             | 0x17      | 2005-04-21 | 0x2cbd6146 | Nocona (NetBurst) D0, Prescott (NetBurst) D0
+intel-ucode/0f-04-01                        | 0x0     | -           | 0x00f41 | 0x02             | 0x16      | 2005-04-21 | 0x0a12a70a | Protomac (NetBurst) C0
+intel-ucode/0f-04-01                        | 0x1400  | -           | 0x00f41 | 0xbd             | 0x17      | 2005-04-22 | 0x326135c1 | Cranford (NetBurst) A0, Nocona (NetBurst) E0, Prescott (NetBurst) E0
+intel-ucode/0f-04-03                        | 0x0     | -           | 0x00f43 | 0x9d             | 0x5       | 2005-04-21 | 0x77812c17 | Irwindale (NetBurst) N0, Prescott (NetBurst) N0
+intel-ucode/0f-04-04                        | 0x0     | -           | 0x00f44 | 0x9d             | 0x6       | 2005-04-21 | 0x9f60db18 | Smithfield (NetBurst) A0
+intel-ucode/0f-04-07                        | 0x0     | -           | 0x00f47 | 0x9d             | 0x3       | 2005-04-21 | 0xaf2cef0d | Smithfield (NetBurst) B0
+intel-ucode/0f-04-08                        | 0x0     | -           | 0x00f48 | 0x01             | 0xc       | 2006-05-08 | 0x5b9afec7 | Paxwille (NetBurst) A0
+intel-ucode/0f-04-08                        | 0xc00   | -           | 0x00f48 | 0x02             | 0xe       | 2008-01-15 | 0x0e158e10 | Paxwille (NetBurst) A0
+intel-ucode/0f-04-08                        | 0x1800  | -           | 0x00f48 | 0x5f             | 0x7       | 2005-06-30 | 0xd0938263 | Paxwille (NetBurst) A0
+intel-ucode/0f-04-09                        | 0x0     | -           | 0x00f49 | 0xbd             | 0x3       | 2005-04-21 | 0xf85d53b8 | Cranford (NetBurst) B0, Nocona (NetBurst) G1, Prescott (NetBurst) G1
+intel-ucode/0f-04-0a                        | 0x0     | -           | 0x00f4a | 0x5c             | 0x4       | 2005-12-14 | 0x5e7996d9 | Irwindale (NetBurst) R0, Prescott (NetBurst) R0
+intel-ucode/0f-04-0a                        | 0x800   | -           | 0x00f4a | 0x5d             | 0x2       | 2005-06-10 | 0xdfbc9997 | Irwindale (NetBurst) R0, Prescott (NetBurst) R0
+intel-ucode/0f-06-02                        | 0x0     | -           | 0x00f62 | 0x04             | 0xf       | 2005-12-15 | 0x0976d137 | Cedar Mill (NetBurst) B1, Presler (NetBurst) B1
+intel-ucode/0f-06-04                        | 0x0     | -           | 0x00f64 | 0x01             | 0x2       | 2005-12-15 | 0x680b0995 | Dempsey (NetBurst) C1
+intel-ucode/0f-06-04                        | 0xc00   | -           | 0x00f64 | 0x34             | 0x4       | 2005-12-23 | 0xc66dbf02 | Cedar Mill (NetBurst) C1, Presler (NetBurst) C1
+intel-ucode/0f-06-05                        | 0x0     | -           | 0x00f65 | 0x01             | 0x8       | 2006-04-26 | 0x5c58f575 | Dempsey (NetBurst) D0
+intel-ucode/0f-06-08                        | 0x0     | -           | 0x00f68 | 0x22             | 0x9       | 2006-07-14 | 0x0d8bb650 | Tulsa (NetBurst) B0

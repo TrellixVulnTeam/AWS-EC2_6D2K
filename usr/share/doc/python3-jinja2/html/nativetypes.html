@@ -1,0 +1,173 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Native Python Types &#8212; Jinja2 2.10.1 documentation</title>
+    <link rel="stylesheet" href="_static/jinja.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Template Designer Documentation" href="templates.html" />
+    <link rel="prev" title="Sandbox" href="sandbox.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="templates.html" title="Template Designer Documentation"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="sandbox.html" title="Sandbox"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Jinja2 2.10.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <span class="target" id="module-jinja2.nativetypes"></span><div class="section" id="native-python-types">
+<span id="nativetypes"></span><h1>Native Python Types<a class="headerlink" href="#native-python-types" title="Permalink to this headline">¶</a></h1>
+<p>The default <a class="reference internal" href="api.html#jinja2.Environment" title="jinja2.Environment"><code class="xref py py-class docutils literal notranslate"><span class="pre">Environment</span></code></a> renders templates to strings. With
+<a class="reference internal" href="#jinja2.nativetypes.NativeEnvironment" title="jinja2.nativetypes.NativeEnvironment"><code class="xref py py-class docutils literal notranslate"><span class="pre">NativeEnvironment</span></code></a>, rendering a template produces a native Python type.
+This is useful if you are using Jinja outside the context of creating text
+files. For example, your code may have an intermediate step where users may use
+templates to define values that will then be passed to a traditional string
+environment.</p>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>Adding two values results in an integer, not a string with a number:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">env</span> <span class="o">=</span> <span class="n">NativeEnvironment</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">from_string</span><span class="p">(</span><span class="s1">&#39;{{ x + y }}&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+<span class="go">6</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">result</span><span class="p">))</span>
+<span class="go">int</span>
+</pre></div>
+</div>
+<p>Rendering list syntax produces a list:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">from_string</span><span class="p">(</span><span class="s1">&#39;[{</span><span class="si">% f</span><span class="s1">or item in data %}{{ item + 1 }},{</span><span class="si">% e</span><span class="s1">ndfor %}]&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+<span class="go">[1, 2, 3, 4, 5]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">result</span><span class="p">))</span>
+<span class="go">list</span>
+</pre></div>
+</div>
+<p>Rendering something that doesn’t look like a Python literal produces a string:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">from_string</span><span class="p">(</span><span class="s1">&#39;{{ x }} * {{ y }}&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+<span class="go">4 * 2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">result</span><span class="p">))</span>
+<span class="go">str</span>
+</pre></div>
+</div>
+<p>Rendering a Python object produces that object as long as it is the only node:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">class</span> <span class="nc">Foo</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<span class="gp">... </span>        <span class="bp">self</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">value</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">from_string</span><span class="p">(</span><span class="s1">&#39;{{ x }}&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">Foo</span><span class="p">(</span><span class="mi">15</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">result</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span><span class="p">)</span>
+<span class="go">Foo</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+<span class="go">15</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="api">
+<h2>API<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="jinja2.nativetypes.NativeEnvironment">
+<em class="property">class </em><code class="descclassname">jinja2.nativetypes.</code><code class="descname">NativeEnvironment</code><span class="sig-paren">(</span><span class="optional">[</span><em>options</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#jinja2.nativetypes.NativeEnvironment" title="Permalink to this definition">¶</a></dt>
+<dd><p>An environment that renders templates to native Python types.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="jinja2.nativetypes.NativeTemplate">
+<em class="property">class </em><code class="descclassname">jinja2.nativetypes.</code><code class="descname">NativeTemplate</code><span class="sig-paren">(</span><span class="optional">[</span><em>options</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#jinja2.nativetypes.NativeTemplate" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="jinja2.nativetypes.NativeTemplate.render">
+<code class="descname">render</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#jinja2.nativetypes.NativeTemplate.render" title="Permalink to this definition">¶</a></dt>
+<dd><p>Render the template to produce a native Python type. If the result
+is a single node, its value is returned. Otherwise, the nodes are
+concatenated as strings. If the result can be parsed with
+<code class="xref py py-func docutils literal notranslate"><span class="pre">ast.literal_eval()</span></code>, the parsed value is returned. Otherwise, the
+string is returned.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><p class="logo"><a href="index.html">
+  <img class="logo" src="_static/jinja-small.png" alt="Logo"/>
+</a></p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Native Python Types</a><ul>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+<li><a class="reference internal" href="#api">API</a></li>
+</ul>
+</li>
+</ul>
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="sandbox.html" title="previous chapter">Sandbox</a></li>
+      <li>Next: <a href="templates.html" title="next chapter">Template Designer Documentation</a></li>
+  </ul></li>
+</ul>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/nativetypes.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2008, Armin Ronacher.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+{
+ "base64_encoded_keys": [],
+ "ds": {
+  "_doc": "EXPERIMENTAL: The structure and format of content scoped under the 'ds' key may change in subsequent releases of cloud-init.",
+  "_metadata_api_version": "2016-09-02",
+  "dynamic": {
+   "instance-identity": {
+    "document": {
+     "accountId": "623920045159",
+     "architecture": "x86_64",
+     "availabilityZone": "ap-northeast-2c",
+     "billingProducts": [
+      "bp-6fa54006"
+     ],
+     "devpayProductCodes": null,
+     "imageId": "ami-07270d166cdf39adc",
+     "instanceId": "i-0545af17b10e4d1fa",
+     "instanceType": "t2.micro",
+     "kernelId": null,
+     "marketplaceProductCodes": null,
+     "pendingTime": "2021-03-02T07:57:26Z",
+     "privateIp": "172.31.34.102",
+     "ramdiskId": null,
+     "region": "ap-northeast-2",
+     "version": "2017-09-30"
+    },
+    "pkcs7": [
+     "MIAGCSqGSIb3DQEHAqCAMIACAQExCzAJBgUrDgMCGgUAMIAGCSqGSIb3DQEHAaCAJIAEggH0ewog",
+     "ICJhY2NvdW50SWQiIDogIjYyMzkyMDA0NTE1OSIsCiAgImFyY2hpdGVjdHVyZSIgOiAieDg2XzY0",
+     "IiwKICAiYXZhaWxhYmlsaXR5Wm9uZSIgOiAiYXAtbm9ydGhlYXN0LTJjIiwKICAiYmlsbGluZ1By",
+     "b2R1Y3RzIiA6IFsgImJwLTZmYTU0MDA2IiBdLAogICJkZXZwYXlQcm9kdWN0Q29kZXMiIDogbnVs",
+     "bCwKICAibWFya2V0cGxhY2VQcm9kdWN0Q29kZXMiIDogbnVsbCwKICAiaW1hZ2VJZCIgOiAiYW1p",
+     "LTA3MjcwZDE2NmNkZjM5YWRjIiwKICAiaW5zdGFuY2VJZCIgOiAiaS0wNTQ1YWYxN2IxMGU0ZDFm",
+     "YSIsCiAgImluc3RhbmNlVHlwZSIgOiAidDIubWljcm8iLAogICJrZXJuZWxJZCIgOiBudWxsLAog",
+     "ICJwZW5kaW5nVGltZSIgOiAiMjAyMS0wMy0wMlQwNzo1NzoyNloiLAogICJwcml2YXRlSXAiIDog",
+     "IjE3Mi4zMS4zNC4xMDIiLAogICJyYW1kaXNrSWQiIDogbnVsbCwKICAicmVnaW9uIiA6ICJhcC1u",
+     "b3J0aGVhc3QtMiIsCiAgInZlcnNpb24iIDogIjIwMTctMDktMzAiCn0AAAAAAAAxggEZMIIBFQIB",
+     "ATBpMFwxCzAJBgNVBAYTAlVTMRkwFwYDVQQIExBXYXNoaW5ndG9uIFN0YXRlMRAwDgYDVQQHEwdT",
+     "ZWF0dGxlMSAwHgYDVQQKExdBbWF6b24gV2ViIFNlcnZpY2VzIExMQwIJAJa6SNnlXhpnMAkGBSsO",
+     "AwIaBQCgXTAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0yMTAzMDIw",
+     "NzU3MzBaMCMGCSqGSIb3DQEJBDEWBBSypzC5Q0A0OTaZnp1ZGaXbBmCcmjAJBgcqhkjOOAQDBDAw",
+     "LgIVAKwegMs8icvg43ZCYlIEf+HMtakYAhUArk6ZNfR3RROQArODWzrrno9/DXAAAAAAAAA="
+    ],
+    "rsa2048": [
+     "MIAGCSqGSIb3DQEHAqCAMIACAQExDzANBglghkgBZQMEAgEFADCABgkqhkiG9w0BBwGggCSABIIB",
+     "9HsKICAiYWNjb3VudElkIiA6ICI2MjM5MjAwNDUxNTkiLAogICJhcmNoaXRlY3R1cmUiIDogIng4",
+     "Nl82NCIsCiAgImF2YWlsYWJpbGl0eVpvbmUiIDogImFwLW5vcnRoZWFzdC0yYyIsCiAgImJpbGxp",
+     "bmdQcm9kdWN0cyIgOiBbICJicC02ZmE1NDAwNiIgXSwKICAiZGV2cGF5UHJvZHVjdENvZGVzIiA6",
+     "IG51bGwsCiAgIm1hcmtldHBsYWNlUHJvZHVjdENvZGVzIiA6IG51bGwsCiAgImltYWdlSWQiIDog",
+     "ImFtaS0wNzI3MGQxNjZjZGYzOWFkYyIsCiAgImluc3RhbmNlSWQiIDogImktMDU0NWFmMTdiMTBl",
+     "NGQxZmEiLAogICJpbnN0YW5jZVR5cGUiIDogInQyLm1pY3JvIiwKICAia2VybmVsSWQiIDogbnVs",
+     "bCwKICAicGVuZGluZ1RpbWUiIDogIjIwMjEtMDMtMDJUMDc6NTc6MjZaIiwKICAicHJpdmF0ZUlw",
+     "IiA6ICIxNzIuMzEuMzQuMTAyIiwKICAicmFtZGlza0lkIiA6IG51bGwsCiAgInJlZ2lvbiIgOiAi",
+     "YXAtbm9ydGhlYXN0LTIiLAogICJ2ZXJzaW9uIiA6ICIyMDE3LTA5LTMwIgp9AAAAAAAAMYIB/zCC",
+     "AfsCAQEwaTBcMQswCQYDVQQGEwJVUzEZMBcGA1UECBMQV2FzaGluZ3RvbiBTdGF0ZTEQMA4GA1UE",
+     "BxMHU2VhdHRsZTEgMB4GA1UEChMXQW1hem9uIFdlYiBTZXJ2aWNlcyBMTEMCCQDbgoAnB7TiYTAN",
+     "BglghkgBZQMEAgEFAKBpMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8X",
+     "DTIxMDMwMjA3NTczMFowLwYJKoZIhvcNAQkEMSIEIJSpZol0lFG/BPw5tLIL2SJN6S+59v+trGsW",
+     "abAWBu7EMA0GCSqGSIb3DQEBAQUABIIBANXLj8b8Sw9qryfRx3hPXt+Bm+nKyJcXVwlIvO/V4lYB",
+     "ul2jHVJDCQA/zf2W9kadLWzGfShhI8/2QQxkyDaNtsoJR8PsC8N01NygrNHx2P9YdmjkHPTi0pny",
+     "m4pUZDcEzgS0PB0iw8RBVdAO4m8FS0MrmKuza+TbIgk/+76ByoK1jEJrdL5B1l85FfYewFEsmlGv",
+     "ckJom+EsKrRkluUtfE9kRwwNOcDnzgpqlzOD/3C/wjLIge1/VzmN0MK+BbItOSfZ9SNEStIrXZRJ",
+     "RXUH5Ir2JSNnQYgtxo8kiV+0oaSEZA62Bm+fCXmU70eur27RcG3hQYvtL6yUBUdwOZB4VD4AAAAA",
+     "AAA="
+    ],
+    "signature": [
+     "WFO2nfTxNUW8xCkNVST83TVPz+wzuAlNYePR6jRMXDNpA3SA9gJwaZEp2CUJ6Re5bEtE1SlkRcjN",
+     "+JRhCuBZ3eP94xwactMUjLG8+qIfteCHlWVLhNGQyQm0oTJg8VDlQ5EuUtKHIel/HpKIVvWxgFSP",
+     "83TM+/x/bUgLvAuh1L4="
+    ]
+   }
+  },
+  "meta-data": {
+   "ami-id": "ami-07270d166cdf39adc",
+   "ami-launch-index": "0",
+   "ami-manifest-path": "(unknown)",
+   "block-device-mapping": {
+    "ami": "/dev/sda1",
+    "root": "/dev/sda1"
+   },
+   "hostname": "ip-172-31-34-102.ap-northeast-2.compute.internal",
+   "instance-action": "none",
+   "instance-id": "i-0545af17b10e4d1fa",
+   "instance-type": "t2.micro",
+   "local-hostname": "ip-172-31-34-102.ap-northeast-2.compute.internal",
+   "local-ipv4": "172.31.34.102",
+   "mac": "0a:17:a5:8c:7a:76",
+   "metrics": {
+    "vhostmd": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+   },
+   "network": {
+    "interfaces": {
+     "macs": {
+      "0a:17:a5:8c:7a:76": {
+       "device-number": "0",
+       "interface-id": "eni-05f7f18908d7a3a3b",
+       "ipv4-associations": {
+        "13.125.242.60": "172.31.34.102"
+       },
+       "local-hostname": "ip-172-31-34-102.ap-northeast-2.compute.internal",
+       "local-ipv4s": "172.31.34.102",
+       "mac": "0a:17:a5:8c:7a:76",
+       "owner-id": "623920045159",
+       "public-hostname": "ec2-13-125-242-60.ap-northeast-2.compute.amazonaws.com",
+       "public-ipv4s": "13.125.242.60",
+       "security-group-ids": "sg-0c32c9016ddf5971c",
+       "security-groups": "launch-wizard-5",
+       "subnet-id": "subnet-b22235fe",
+       "subnet-ipv4-cidr-block": "172.31.32.0/20",
+       "vpc-id": "vpc-07fa4b6c",
+       "vpc-ipv4-cidr-block": "172.31.0.0/16",
+       "vpc-ipv4-cidr-blocks": "172.31.0.0/16"
+      }
+     }
+    }
+   },
+   "placement": {
+    "availability-zone": "ap-northeast-2c"
+   },
+   "profile": "default-hvm",
+   "public-hostname": "ec2-13-125-242-60.ap-northeast-2.compute.amazonaws.com",
+   "public-ipv4": "13.125.242.60",
+   "public-keys": {
+    "kimhyunsoon_ec2_210301": [
+     "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCMAchv2ZpBa8wVE6iaNa94mPpNkh0rgf6zFePiCu8XfgeQDIgcxht4m2Q+sGDebExiNbHItnVupfiCBndmr8yA2aC0gcqLMj00KlQABT9a9XUxDRCNnHZ8k4dSw2MgAHVbdTtahroSE0vP43X2tgEVbE0FKdMQfHJhCWxEyv5/fXrPGZRkUfpLS5XetKSIeuMxQfgVrTBtZvplNK957/rk01zIX/CpmKIYvOcynMAW4ipLJEkEcOGvJzGgkfbJHRbDRUz3YDTbzJSMxlqjWjA3qgpoO+SUPgI/RrsSKPtVdml4ycBcVTXmIBNqbIYrjj1qr7i+r94wz6S9h+uFhygD kimhyunsoon_ec2_210301"
+    ]
+   },
+   "reservation-id": "r-04f3c7a112fe1c1d1",
+   "security-groups": "launch-wizard-5",
+   "services": {
+    "domain": "amazonaws.com",
+    "partition": "aws"
+   }
+  }
+ },
+ "sensitive_keys": [],
+ "v1": {
+  "_beta_keys": [
+   "subplatform"
+  ],
+  "availability-zone": "ap-northeast-2c",
+  "availability_zone": "ap-northeast-2c",
+  "cloud-name": "aws",
+  "cloud_name": "aws",
+  "instance-id": "i-0545af17b10e4d1fa",
+  "instance_id": "i-0545af17b10e4d1fa",
+  "local-hostname": "ip-172-31-34-102",
+  "local_hostname": "ip-172-31-34-102",
+  "platform": "ec2",
+  "public_ssh_keys": [
+   "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCMAchv2ZpBa8wVE6iaNa94mPpNkh0rgf6zFePiCu8XfgeQDIgcxht4m2Q+sGDebExiNbHItnVupfiCBndmr8yA2aC0gcqLMj00KlQABT9a9XUxDRCNnHZ8k4dSw2MgAHVbdTtahroSE0vP43X2tgEVbE0FKdMQfHJhCWxEyv5/fXrPGZRkUfpLS5XetKSIeuMxQfgVrTBtZvplNK957/rk01zIX/CpmKIYvOcynMAW4ipLJEkEcOGvJzGgkfbJHRbDRUz3YDTbzJSMxlqjWjA3qgpoO+SUPgI/RrsSKPtVdml4ycBcVTXmIBNqbIYrjj1qr7i+r94wz6S9h+uFhygD kimhyunsoon_ec2_210301"
+  ],
+  "region": "ap-northeast-2",
+  "subplatform": "metadata (http://169.254.169.254)"
+ }
+}

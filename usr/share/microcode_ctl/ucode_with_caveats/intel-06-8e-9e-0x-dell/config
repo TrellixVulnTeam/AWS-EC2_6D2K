@@ -1,0 +1,17 @@
+path intel-ucode/*
+vendor GenuineIntel
+## It is deemed that blacklisting all 06-[89]e-0x models on all hardware
+## in cases where no model filter is used is too broad, hence
+## no-model-mode=success.
+dmi mode=fail-equal no-model-mode=success key=bios_vendor val="Dell Inc."
+## The "kernel_early" statements are carried over from the intel caveat config
+## in order to avoid enabling this newer microcode on these problematic kernels;
+## see the caveat description in /usr/share/doc/microcode_ctl/caveats/intel_readme
+## (That also means that this caveat has to be enforced separately on these
+## kernels.)
+kernel_early 4.10.0
+kernel_early 3.10.0-930
+kernel_early 3.10.0-862.14.1
+kernel_early 3.10.0-693.38.1
+kernel_early 3.10.0-514.57.1
+kernel_early 3.10.0-327.73.1

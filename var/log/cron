@@ -1,0 +1,22 @@
+Mar  2 07:58:55 ip-172-31-34-102 crond[1104]: (CRON) STARTUP (1.5.2)
+Mar  2 07:58:55 ip-172-31-34-102 crond[1104]: (CRON) INFO (Syslog will be used instead of sendmail.)
+Mar  2 07:58:55 ip-172-31-34-102 crond[1104]: (CRON) INFO (RANDOM_DELAY will be scaled with factor 77% if used.)
+Mar  2 07:58:55 ip-172-31-34-102 crond[1104]: (CRON) INFO (running with inotify support)
+Mar  2 08:01:01 ip-172-31-34-102 CROND[5060]: (root) CMD (run-parts /etc/cron.hourly)
+Mar  2 08:01:01 ip-172-31-34-102 run-parts[5060]: (/etc/cron.hourly) starting 0anacron
+Mar  2 08:01:01 ip-172-31-34-102 run-parts[5060]: (/etc/cron.hourly) finished 0anacron
+Mar  2 08:01:01 ip-172-31-34-102 anacron[5069]: Anacron started on 2021-03-02
+Mar  2 08:01:01 ip-172-31-34-102 anacron[5069]: Will run job `cron.daily' in 30 min.
+Mar  2 08:01:01 ip-172-31-34-102 anacron[5069]: Will run job `cron.weekly' in 50 min.
+Mar  2 08:01:01 ip-172-31-34-102 anacron[5069]: Will run job `cron.monthly' in 70 min.
+Mar  2 08:01:01 ip-172-31-34-102 anacron[5069]: Jobs will be executed sequentially
+Mar  2 08:05:51 ip-172-31-34-102 crond[1104]: (CRON) INFO (Shutting down)
+Mar  2 08:05:51 ip-172-31-34-102 crond[5465]: (CRON) STARTUP (1.5.2)
+Mar  2 08:05:51 ip-172-31-34-102 crond[5465]: (CRON) INFO (Syslog will be used instead of sendmail.)
+Mar  2 08:05:51 ip-172-31-34-102 crond[5465]: (CRON) INFO (RANDOM_DELAY will be scaled with factor 46% if used.)
+Mar  2 08:05:51 ip-172-31-34-102 crond[5465]: (CRON) INFO (running with inotify support)
+Mar  2 08:05:51 ip-172-31-34-102 crond[5465]: (CRON) INFO (@reboot jobs will be run at computer's startup.)
+Mar  2 08:31:01 ip-172-31-34-102 anacron[5069]: Job `cron.daily' started
+Mar  2 08:31:01 ip-172-31-34-102 run-parts[61855]: (/etc/cron.daily) starting logrotate
+Mar  2 08:31:01 ip-172-31-34-102 run-parts[61855]: (/etc/cron.daily) finished logrotate
+Mar  2 08:31:01 ip-172-31-34-102 anacron[5069]: Job `cron.daily' terminated

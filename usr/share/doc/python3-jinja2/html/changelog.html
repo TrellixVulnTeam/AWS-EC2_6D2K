@@ -1,0 +1,693 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Jinja Changelog &#8212; Jinja2 2.10.1 documentation</title>
+    <link rel="stylesheet" href="_static/jinja.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Frequently Asked Questions" href="faq.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="faq.html" title="Frequently Asked Questions"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Jinja2 2.10.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <span class="target" id="module-jinja2"></span><div class="section" id="jinja-changelog">
+<h1>Jinja Changelog<a class="headerlink" href="#jinja-changelog" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="version-2-10-1">
+<h2>Version 2.10.1<a class="headerlink" href="#version-2-10-1" title="Permalink to this headline">¶</a></h2>
+<p>Released 2019-04-06</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">SandboxedEnvironment</span></code> securely handles <code class="docutils literal notranslate"><span class="pre">str.format_map</span></code> in
+order to prevent code execution through untrusted format strings.
+The sandbox already handled <code class="docutils literal notranslate"><span class="pre">str.format</span></code>.</li>
+</ul>
+</div>
+<div class="section" id="version-2-10">
+<h2>Version 2.10<a class="headerlink" href="#version-2-10" title="Permalink to this headline">¶</a></h2>
+<p>released on November 8th 2017</p>
+<ul class="simple">
+<li>Added a new extension node called <code class="docutils literal notranslate"><span class="pre">OverlayScope</span></code> which can be used to
+create an unoptimized scope that will look up all variables from a
+derived context.</li>
+<li>Added an <code class="docutils literal notranslate"><span class="pre">in</span></code> test that works like the in operator.  This can be used
+in combination with <code class="docutils literal notranslate"><span class="pre">reject</span></code> and <code class="docutils literal notranslate"><span class="pre">select</span></code>.</li>
+<li>Added <code class="docutils literal notranslate"><span class="pre">previtem</span></code> and <code class="docutils literal notranslate"><span class="pre">nextitem</span></code> to loop contexts, providing access to the
+previous/next item in the loop. If such an item does not exist, the value is
+undefined.</li>
+<li>Added <code class="docutils literal notranslate"><span class="pre">changed(*values)</span></code> to loop contexts, providing an easy way of
+checking whether a value has changed since the last iteration (or rather
+since the last call of the method)</li>
+<li>Added a <code class="docutils literal notranslate"><span class="pre">namespace</span></code> function that creates a special object which allows
+attribute assignment using the <code class="docutils literal notranslate"><span class="pre">set</span></code> tag.  This can be used to carry data
+across scopes, e.g. from a loop body to code that comes after the loop.</li>
+<li>Added a <code class="docutils literal notranslate"><span class="pre">trimmed</span></code> modifier to <code class="docutils literal notranslate"><span class="pre">{%</span> <span class="pre">trans</span> <span class="pre">%}</span></code> to strip linebreaks and
+surrounding whitespace. Also added a new policy to enable this for all
+<code class="docutils literal notranslate"><span class="pre">trans</span></code> blocks.</li>
+<li>The <code class="docutils literal notranslate"><span class="pre">random</span></code> filter is no longer incorrectly constant folded and will
+produce a new random choice each time the template is rendered. (<a class="reference external" href="https://github.com/pallets/jinja/pull/478">#478</a>)</li>
+<li>Added a <code class="docutils literal notranslate"><span class="pre">unique</span></code> filter. (<a class="reference external" href="https://github.com/pallets/jinja/pull/469">#469</a>)</li>
+<li>Added <code class="docutils literal notranslate"><span class="pre">min</span></code> and <code class="docutils literal notranslate"><span class="pre">max</span></code> filters. (<a class="reference external" href="https://github.com/pallets/jinja/pull/475">#475</a>)</li>
+<li>Added tests for all comparison operators: <code class="docutils literal notranslate"><span class="pre">eq</span></code>, <code class="docutils literal notranslate"><span class="pre">ne</span></code>, <code class="docutils literal notranslate"><span class="pre">lt</span></code>, <code class="docutils literal notranslate"><span class="pre">le</span></code>,
+<code class="docutils literal notranslate"><span class="pre">gt</span></code>, <code class="docutils literal notranslate"><span class="pre">ge</span></code>. (<a class="reference external" href="https://github.com/pallets/jinja/pull/665">#665</a>)</li>
+<li><code class="docutils literal notranslate"><span class="pre">import</span></code> statement cannot end with a trailing comma. (<a class="reference external" href="https://github.com/pallets/jinja/pull/617">#617</a>, <a class="reference external" href="https://github.com/pallets/jinja/pull/618">#618</a>)</li>
+<li><code class="docutils literal notranslate"><span class="pre">indent</span></code> filter will not indent blank lines by default. (<a class="reference external" href="https://github.com/pallets/jinja/pull/685">#685</a>)</li>
+<li>Add <code class="docutils literal notranslate"><span class="pre">reverse</span></code> argument for <code class="docutils literal notranslate"><span class="pre">dictsort</span></code> filter. (<a class="reference external" href="https://github.com/pallets/jinja/pull/692">#692</a>)</li>
+<li>Add a <code class="docutils literal notranslate"><span class="pre">NativeEnvironment</span></code> that renders templates to native Python types
+instead of strings. (<a class="reference external" href="https://github.com/pallets/jinja/pull/708">#708</a>)</li>
+<li>Added filter support to the block <code class="docutils literal notranslate"><span class="pre">set</span></code> tag. (<a class="reference external" href="https://github.com/pallets/jinja/pull/489">#489</a>)</li>
+<li><code class="docutils literal notranslate"><span class="pre">tojson</span></code> filter marks output as safe to match documented behavior.
+(<a class="reference external" href="https://github.com/pallets/jinja/pull/718">#718</a>)</li>
+<li>Resolved a bug where getting debug locals for tracebacks could
+modify template context.</li>
+<li>Fixed a bug where having many <code class="docutils literal notranslate"><span class="pre">{%</span> <span class="pre">elif</span> <span class="pre">...</span> <span class="pre">%}</span></code> blocks resulted in a
+“too many levels of indentation” error.  These blocks now compile to
+native <code class="docutils literal notranslate"><span class="pre">elif</span> <span class="pre">..:</span></code> instead of <code class="docutils literal notranslate"><span class="pre">else:</span> <span class="pre">if</span> <span class="pre">..:</span></code> (<a class="reference external" href="https://github.com/pallets/jinja/pull/759">#759</a>)</li>
+</ul>
+</div>
+<div class="section" id="version-2-9-6">
+<h2>Version 2.9.6<a class="headerlink" href="#version-2-9-6" title="Permalink to this headline">¶</a></h2>
+<p>(bugfix release, released on April 3rd 2017)</p>
+<ul class="simple">
+<li>Fixed custom context behavior in fast resolve mode (#675)</li>
+</ul>
+</div>
+<div class="section" id="version-2-9-5">
+<h2>Version 2.9.5<a class="headerlink" href="#version-2-9-5" title="Permalink to this headline">¶</a></h2>
+<p>(bugfix release, released on January 28th 2017)</p>
+<ul class="simple">
+<li>Restored the original repr of the internal <code class="docutils literal notranslate"><span class="pre">_GroupTuple</span></code> because this
+caused issues with ansible and it was an unintended change.  (#654)</li>
+<li>Added back support for custom contexts that override the old <code class="docutils literal notranslate"><span class="pre">resolve</span></code>
+method since it was hard for people to spot that this could cause a
+regression.</li>
+<li>Correctly use the buffer for the else block of for loops.  This caused
+invalid syntax errors to be caused on 2.x and completely wrong behavior
+on Python 3 (#669)</li>
+<li>Resolve an issue where the <code class="docutils literal notranslate"><span class="pre">{%</span> <span class="pre">extends</span> <span class="pre">%}</span></code> tag could not be used with
+async environments. (#668)</li>
+<li>Reduce memory footprint slightly by reducing our unicode database dump
+we use for identifier matching on Python 3 (#666)</li>
+<li>Fixed autoescaping not working for macros in async compilation mode. (#671)</li>
+</ul>
+</div>
+<div class="section" id="version-2-9-4">
+<h2>Version 2.9.4<a class="headerlink" href="#version-2-9-4" title="Permalink to this headline">¶</a></h2>
+<p>(bugfix release, released on January 10th 2017)</p>
+<ul class="simple">
+<li>Solved some warnings for string literals.  (#646)</li>
+<li>Increment the bytecode cache version which was not done due to an
+oversight before.</li>
+<li>Corrected bad code generation and scoping for filtered loops.  (#649)</li>
+<li>Resolved an issue where top-level output silencing after known extend
+blocks could generate invalid code when blocks where contained in if
+statements.  (#651)</li>
+<li>Made the <code class="docutils literal notranslate"><span class="pre">truncate.leeway</span></code> default configurable to improve compatibility
+with older templates.</li>
+</ul>
+</div>
+<div class="section" id="version-2-9-3">
+<h2>Version 2.9.3<a class="headerlink" href="#version-2-9-3" title="Permalink to this headline">¶</a></h2>
+<p>(bugfix release, released on January 8th 2017)</p>
+<ul class="simple">
+<li>Restored the use of blocks in macros to the extend that was possible
+before.  On Python 3 it would render a generator repr instead of
+the block contents. (#645)</li>
+<li>Set a consistent behavior for assigning of variables in inner scopes
+when the variable is also read from an outer scope.  This now sets the
+intended behavior in all situations however it does not restore the
+old behavior where limited assignments to outer scopes was possible.
+For more information and a discussion see #641</li>
+<li>Resolved an issue where <code class="docutils literal notranslate"><span class="pre">block</span> <span class="pre">scoped</span></code> would not take advantage of the
+new scoping rules.  In some more exotic cases a variable overriden in a
+local scope would not make it into a block.</li>
+<li>Change the code generation of the <code class="docutils literal notranslate"><span class="pre">with</span></code> statement to be in line with the
+new scoping rules.  This resolves some unlikely bugs in edge cases.  This
+also introduces a new internal <code class="docutils literal notranslate"><span class="pre">With</span></code> node that can be used by extensions.</li>
+</ul>
+</div>
+<div class="section" id="version-2-9-2">
+<h2>Version 2.9.2<a class="headerlink" href="#version-2-9-2" title="Permalink to this headline">¶</a></h2>
+<p>(bugfix release, released on January 8th 2017)</p>
+<ul class="simple">
+<li>Fixed a regression that caused for loops to not be able to use the same
+variable for the target as well as source iterator.  (#640)</li>
+<li>Add support for a previously unknown behavior of macros.  It used to be
+possible in some circumstances to explicitly provide a caller argument
+to macros.  While badly buggy and unintended it turns out that this is a
+common case that gets copy pasted around.  To not completely break backwards
+compatibility with the most common cases it’s now possible to provide an
+explicit keyword argument for caller if it’s given an explicit default.
+(#642)</li>
+</ul>
+</div>
+<div class="section" id="version-2-9-1">
+<h2>Version 2.9.1<a class="headerlink" href="#version-2-9-1" title="Permalink to this headline">¶</a></h2>
+<p>(bugfix release, released on January 7th 2017)</p>
+<ul class="simple">
+<li>Resolved a regression with call block scoping for macros.  Nested caller
+blocks that used the same identifiers as outer macros could refer to the
+wrong variable incorrectly.</li>
+</ul>
+</div>
+<div class="section" id="version-2-9">
+<h2>Version 2.9<a class="headerlink" href="#version-2-9" title="Permalink to this headline">¶</a></h2>
+<p>(codename Derivation, released on January 7th 2017)</p>
+<ul class="simple">
+<li>Change cache key definition in environment. This fixes a performance
+regression introduced in 2.8.</li>
+<li>Added support for <code class="docutils literal notranslate"><span class="pre">generator_stop</span></code> on supported Python versions
+(Python 3.5 and later)</li>
+<li>Corrected a long standing issue with operator precedence of math operations
+not being what was expected.</li>
+<li>Added support for Python 3.6 async iterators through a new async mode.</li>
+<li>Added policies for filter defaults and similar things.</li>
+<li>urlize now sets “rel noopener” by default.</li>
+<li>Support attribute fallback for old-style classes in 2.x.</li>
+<li>Support toplevel set statements in extend situations.</li>
+<li>Restored behavior of Cycler for Python 3 users.</li>
+<li>Subtraction now follows the same behavior as other operators on undefined
+values.</li>
+<li><code class="docutils literal notranslate"><span class="pre">map</span></code> and friends will now give better error messages if you forgot to
+quote the parameter.</li>
+<li>Depend on MarkupSafe 0.23 or higher.</li>
+<li>Improved the <code class="docutils literal notranslate"><span class="pre">truncate</span></code> filter to support better truncation in case
+the string is barely truncated at all.</li>
+<li>Change the logic for macro autoescaping to be based on the runtime
+autoescaping information at call time instead of macro define time.</li>
+<li>Ported a modified version of the <code class="docutils literal notranslate"><span class="pre">tojson</span></code> filter from Flask to Jinja2
+and hooked it up with the new policy framework.</li>
+<li>Block sets are now marked <code class="docutils literal notranslate"><span class="pre">safe</span></code> by default.</li>
+<li>On Python 2 the asciification of ASCII strings can now be disabled with
+the <code class="docutils literal notranslate"><span class="pre">compiler.ascii_str</span></code> policy.</li>
+<li>Tests now no longer accept an arbitrary expression as first argument but
+a restricted one.  This means that you can now properly use multiple
+tests in one expression without extra parentheses.  In particular you can
+now write <code class="docutils literal notranslate"><span class="pre">foo</span> <span class="pre">is</span> <span class="pre">divisibleby</span> <span class="pre">2</span> <span class="pre">or</span> <span class="pre">foo</span> <span class="pre">is</span> <span class="pre">divisibleby</span> <span class="pre">3</span></code>
+as you would expect.</li>
+<li>Greatly changed the scoping system to be more consistent with what template
+designers and developers expect.  There is now no more magic difference
+between the different include and import constructs.  Context is now always
+propagated the same way.  The only remaining differences is the defaults
+for <code class="docutils literal notranslate"><span class="pre">with</span> <span class="pre">context</span></code> and <code class="docutils literal notranslate"><span class="pre">without</span> <span class="pre">context</span></code>.</li>
+<li>The <code class="docutils literal notranslate"><span class="pre">with</span></code> and <code class="docutils literal notranslate"><span class="pre">autoescape</span></code> tags are now built-in.</li>
+<li>Added the new <code class="docutils literal notranslate"><span class="pre">select_autoescape</span></code> function which helps configuring better
+autoescaping easier.</li>
+<li>Fixed a runtime error in the sandbox when attributes of async generators
+were accessed.</li>
+</ul>
+</div>
+<div class="section" id="version-2-8-1">
+<h2>Version 2.8.1<a class="headerlink" href="#version-2-8-1" title="Permalink to this headline">¶</a></h2>
+<p>(bugfix release, released on December 29th 2016)</p>
+<ul class="simple">
+<li>Fixed the <code class="docutils literal notranslate"><span class="pre">for_qs</span></code> flag for <code class="docutils literal notranslate"><span class="pre">urlencode</span></code>.</li>
+<li>Fixed regression when applying <code class="docutils literal notranslate"><span class="pre">int</span></code> to non-string values.</li>
+<li>SECURITY: if the sandbox mode is used format expressions are now sandboxed
+with the same rules as in Jinja.  This solves various information leakage
+problems that can occur with format strings.</li>
+</ul>
+</div>
+<div class="section" id="version-2-8">
+<h2>Version 2.8<a class="headerlink" href="#version-2-8" title="Permalink to this headline">¶</a></h2>
+<p>(codename Replacement, released on July 26th 2015)</p>
+<ul class="simple">
+<li>Added <code class="docutils literal notranslate"><span class="pre">target</span></code> parameter to urlize function.</li>
+<li>Added support for <code class="docutils literal notranslate"><span class="pre">followsymlinks</span></code> to the file system loader.</li>
+<li>The truncate filter now counts the length.</li>
+<li>Added equalto filter that helps with select filters.</li>
+<li>Changed cache keys to use absolute file names if available
+instead of load names.</li>
+<li>Fixed loop length calculation for some iterators.</li>
+<li>Changed how Jinja2 enforces strings to be native strings in
+Python 2 to work when people break their default encoding.</li>
+<li>Added <a class="reference internal" href="api.html#jinja2.make_logging_undefined" title="jinja2.make_logging_undefined"><code class="xref py py-func docutils literal notranslate"><span class="pre">make_logging_undefined()</span></code></a> which returns an undefined
+object that logs failures into a logger.</li>
+<li>If unmarshalling of cached data fails the template will be
+reloaded now.</li>
+<li>Implemented a block <code class="docutils literal notranslate"><span class="pre">set</span></code> tag.</li>
+<li>Default cache size was increased to 400 from a low 50.</li>
+<li>Fixed <code class="docutils literal notranslate"><span class="pre">is</span> <span class="pre">number</span></code> test to accept long integers in all Python versions.</li>
+<li>Changed <code class="docutils literal notranslate"><span class="pre">is</span> <span class="pre">number</span></code> to accept Decimal as a number.</li>
+<li>Added a check for default arguments followed by non-default arguments. This
+change makes <code class="docutils literal notranslate"><span class="pre">{%</span> <span class="pre">macro</span> <span class="pre">m(x,</span> <span class="pre">y=1,</span> <span class="pre">z)</span> <span class="pre">%}...{%</span> <span class="pre">endmacro</span> <span class="pre">%}</span></code> a syntax error.
+The previous behavior for this code was broken anyway (resulting in the
+default value being applied to <code class="docutils literal notranslate"><span class="pre">y</span></code>).</li>
+<li>Add ability to use custom subclasses of <code class="docutils literal notranslate"><span class="pre">jinja2.compiler.CodeGenerator</span></code> and
+<code class="docutils literal notranslate"><span class="pre">jinja2.runtime.Context</span></code> by adding two new attributes to the environment
+(<code class="docutils literal notranslate"><span class="pre">code_generator_class</span></code> and <code class="docutils literal notranslate"><span class="pre">context_class</span></code>) (pull request <code class="docutils literal notranslate"><span class="pre">#404</span></code>).</li>
+<li>added support for context/environment/evalctx decorator functions on
+the finalize callback of the environment.</li>
+<li>escape query strings for urlencode properly.  Previously slashes were not
+escaped in that place.</li>
+<li>Add ‘base’ parameter to ‘int’ filter.</li>
+</ul>
+</div>
+<div class="section" id="version-2-7-3">
+<h2>Version 2.7.3<a class="headerlink" href="#version-2-7-3" title="Permalink to this headline">¶</a></h2>
+<p>(bugfix release, released on June 6th 2014)</p>
+<ul class="simple">
+<li>Security issue: Corrected the security fix for the cache folder.  This
+fix was provided by RedHat.</li>
+</ul>
+</div>
+<div class="section" id="version-2-7-2">
+<h2>Version 2.7.2<a class="headerlink" href="#version-2-7-2" title="Permalink to this headline">¶</a></h2>
+<p>(bugfix release, released on January 10th 2014)</p>
+<ul class="simple">
+<li>Prefix loader was not forwarding the locals properly to
+inner loaders.  This is now fixed.</li>
+<li>Security issue: Changed the default folder for the filesystem cache to be
+user specific and read and write protected on UNIX systems.  See
+<a class="reference external" href="http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=734747">Debian bug 734747</a> for more information.</li>
+</ul>
+</div>
+<div class="section" id="version-2-7-1">
+<h2>Version 2.7.1<a class="headerlink" href="#version-2-7-1" title="Permalink to this headline">¶</a></h2>
+<p>(bugfix release, released on August 7th 2013)</p>
+<ul class="simple">
+<li>Fixed a bug with <code class="docutils literal notranslate"><span class="pre">call_filter</span></code> not working properly on environment
+and context filters.</li>
+<li>Fixed lack of Python 3 support for bytecode caches.</li>
+<li>Reverted support for defining blocks in included templates as this
+broke existing templates for users.</li>
+<li>Fixed some warnings with hashing of undefineds and nodes if Python
+is run with warnings for Python 3.</li>
+<li>Added support for properly hashing undefined objects.</li>
+<li>Fixed a bug with the title filter not working on already uppercase
+strings.</li>
+</ul>
+</div>
+<div class="section" id="version-2-7">
+<h2>Version 2.7<a class="headerlink" href="#version-2-7" title="Permalink to this headline">¶</a></h2>
+<p>(codename Translation, released on May 20th 2013)</p>
+<ul class="simple">
+<li>Choice and prefix loaders now dispatch source and template lookup
+separately in order to work in combination with module loaders as
+advertised.</li>
+<li>Fixed filesizeformat.</li>
+<li>Added a non-silent option for babel extraction.</li>
+<li>Added <code class="docutils literal notranslate"><span class="pre">urlencode</span></code> filter that automatically quotes values for
+URL safe usage with utf-8 as only supported encoding.  If applications
+want to change this encoding they can override the filter.</li>
+<li>Added <code class="docutils literal notranslate"><span class="pre">keep-trailing-newline</span></code> configuration to environments and
+templates to optionally preserve the final trailing newline.</li>
+<li>Accessing <code class="docutils literal notranslate"><span class="pre">last</span></code> on the loop context no longer causes the iterator
+to be consumed into a list.</li>
+<li>Python requirement changed: 2.6, 2.7 or &gt;= 3.3 are required now,
+supported by same source code, using the “six” compatibility library.</li>
+<li>Allow <code class="docutils literal notranslate"><span class="pre">contextfunction</span></code> and other decorators to be applied to <code class="docutils literal notranslate"><span class="pre">__call__</span></code>.</li>
+<li>Added support for changing from newline to different signs in the <code class="docutils literal notranslate"><span class="pre">wordwrap</span></code>
+filter.</li>
+<li>Added support for ignoring memcache errors silently.</li>
+<li>Added support for keeping the trailing newline in templates.</li>
+<li>Added finer grained support for stripping whitespace on the left side
+of blocks.</li>
+<li>Added <code class="docutils literal notranslate"><span class="pre">map</span></code>, <code class="docutils literal notranslate"><span class="pre">select</span></code>, <code class="docutils literal notranslate"><span class="pre">reject</span></code>, <code class="docutils literal notranslate"><span class="pre">selectattr</span></code> and <code class="docutils literal notranslate"><span class="pre">rejectattr</span></code>
+filters.</li>
+<li>Added support for <code class="docutils literal notranslate"><span class="pre">loop.depth</span></code> to figure out how deep inside a recursive
+loop the code is.</li>
+<li>Disabled py_compile for pypy and python 3.</li>
+</ul>
+</div>
+<div class="section" id="version-2-6">
+<h2>Version 2.6<a class="headerlink" href="#version-2-6" title="Permalink to this headline">¶</a></h2>
+<p>(codename Convolution, released on July 24th 2011)</p>
+<ul class="simple">
+<li>internal attributes now raise an internal attribute error now instead
+of returning an undefined.  This fixes problems when passing undefined
+objects to Python semantics expecting APIs.</li>
+<li>traceback support now works properly for PyPy.  (Tested with 1.4)</li>
+<li>implemented operator intercepting for sandboxed environments.  This
+allows application developers to disable builtin operators for better
+security.  (For instance limit the mathematical operators to actual
+integers instead of longs)</li>
+<li>groupby filter now supports dotted notation for grouping by attributes
+of attributes.</li>
+<li>scoped blocks now properly treat toplevel assignments and imports.
+Previously an import suddenly “disappeared” in a scoped block.</li>
+<li>automatically detect newer Python interpreter versions before loading code
+from bytecode caches to prevent segfaults on invalid opcodes.  The segfault
+in earlier Jinja2 versions here was not a Jinja2 bug but a limitation in
+the underlying Python interpreter.  If you notice Jinja2 segfaulting in
+earlier versions after an upgrade of the Python interpreter you don’t have
+to upgrade, it’s enough to flush the bytecode cache.  This just no longer
+makes this necessary, Jinja2 will automatically detect these cases now.</li>
+<li>the sum filter can now sum up values by attribute.  This is a backwards
+incompatible change.  The argument to the filter previously was the
+optional starting index which defaults to zero.  This now became the
+second argument to the function because it’s rarely used.</li>
+<li>like sum, sort now also makes it possible to order items by attribute.</li>
+<li>like sum and sort, join now also is able to join attributes of objects
+as string.</li>
+<li>the internal eval context now has a reference to the environment.</li>
+<li>added a mapping test to see if an object is a dict or an object with
+a similar interface.</li>
+</ul>
+</div>
+<div class="section" id="version-2-5-5">
+<h2>Version 2.5.5<a class="headerlink" href="#version-2-5-5" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>(re-release of 2.5.4 with built documentation removed for filesize.</dt>
+<dd>Released on October 18th 2010)</dd>
+</dl>
+<ul class="simple">
+<li>built documentation is no longer part of release.</li>
+</ul>
+</div>
+<div class="section" id="version-2-5-4">
+<h2>Version 2.5.4<a class="headerlink" href="#version-2-5-4" title="Permalink to this headline">¶</a></h2>
+<p>(bugfix release, released on October 17th 2010)</p>
+<ul class="simple">
+<li>Fixed extensions not loading properly with overlays.</li>
+<li>Work around a bug in cpython for the debugger that causes segfaults
+on 64bit big-endian architectures.</li>
+</ul>
+</div>
+<div class="section" id="version-2-5-3">
+<h2>Version 2.5.3<a class="headerlink" href="#version-2-5-3" title="Permalink to this headline">¶</a></h2>
+<p>(bugfix release, released on October 17th 2010)</p>
+<ul class="simple">
+<li>fixed an operator precedence error introduced in 2.5.2.  Statements
+like “-foo.bar” had their implicit parentheses applied around the
+first part of the expression (“(-foo).bar”) instead of the more
+correct “-(foo.bar)”.</li>
+</ul>
+</div>
+<div class="section" id="version-2-5-2">
+<h2>Version 2.5.2<a class="headerlink" href="#version-2-5-2" title="Permalink to this headline">¶</a></h2>
+<p>(bugfix release, released on August 18th 2010)</p>
+<ul class="simple">
+<li>improved setup.py script to better work with assumptions people
+might still have from it (<code class="docutils literal notranslate"><span class="pre">--with-speedups</span></code>).</li>
+<li>fixed a packaging error that excluded the new debug support.</li>
+</ul>
+</div>
+<div class="section" id="version-2-5-1">
+<h2>Version 2.5.1<a class="headerlink" href="#version-2-5-1" title="Permalink to this headline">¶</a></h2>
+<p>(bugfix release, released on August 17th 2010)</p>
+<ul class="simple">
+<li>StopIteration exceptions raised by functions called from templates
+are now intercepted and converted to undefineds.  This solves a
+lot of debugging grief.  (StopIteration is used internally to
+abort template execution)</li>
+<li>improved performance of macro calls slightly.</li>
+<li>babel extraction can now properly extract newstyle gettext calls.</li>
+<li>using the variable <code class="docutils literal notranslate"><span class="pre">num</span></code> in newstyle gettext for something else
+than the pluralize count will no longer raise a <code class="xref py py-exc docutils literal notranslate"><span class="pre">KeyError</span></code>.</li>
+<li>removed builtin markup class and switched to markupsafe.  For backwards
+compatibility the pure Python implementation still exists but is
+pulled from markupsafe by the Jinja2 developers.  The debug support
+went into a separate feature called “debugsupport” and is disabled
+by default because it is only relevant for Python 2.4</li>
+<li>fixed an issue with unary operators having the wrong precedence.</li>
+</ul>
+</div>
+<div class="section" id="version-2-5">
+<h2>Version 2.5<a class="headerlink" href="#version-2-5" title="Permalink to this headline">¶</a></h2>
+<p>(codename Incoherence, released on May 29th 2010)</p>
+<ul class="simple">
+<li>improved the sort filter (should have worked like this for a
+long time) by adding support for case insensitive searches.</li>
+<li>fixed a bug for getattribute constant folding.</li>
+<li>support for newstyle gettext translations which result in a
+nicer in-template user interface and more consistent
+catalogs. (<a class="reference internal" href="extensions.html#newstyle-gettext"><span class="std std-ref">Whitespace Trimming</span></a>)</li>
+<li>it’s now possible to register extensions after an environment
+was created.</li>
+</ul>
+</div>
+<div class="section" id="version-2-4-1">
+<h2>Version 2.4.1<a class="headerlink" href="#version-2-4-1" title="Permalink to this headline">¶</a></h2>
+<p>(bugfix release, released on April 20th 2010)</p>
+<ul class="simple">
+<li>fixed an error reporting bug for undefineds.</li>
+</ul>
+</div>
+<div class="section" id="version-2-4">
+<h2>Version 2.4<a class="headerlink" href="#version-2-4" title="Permalink to this headline">¶</a></h2>
+<p>(codename Correlation, released on April 13th 2010)</p>
+<ul class="simple">
+<li>the environment template loading functions now transparently
+pass through a template object if it was passed to it.  This
+makes it possible to import or extend from a template object
+that was passed to the template.</li>
+<li>added a <a class="reference internal" href="api.html#jinja2.ModuleLoader" title="jinja2.ModuleLoader"><code class="xref py py-class docutils literal notranslate"><span class="pre">ModuleLoader</span></code></a> that can load templates from
+precompiled sources.  The environment now features a method
+to compile the templates from a configured loader into a zip
+file or folder.</li>
+<li>the _speedups C extension now supports Python 3.</li>
+<li>added support for autoescaping toggling sections and support
+for evaluation contexts (<a class="reference internal" href="api.html#eval-context"><span class="std std-ref">Evaluation Context</span></a>).</li>
+<li>extensions have a priority now.</li>
+</ul>
+</div>
+<div class="section" id="version-2-3-1">
+<h2>Version 2.3.1<a class="headerlink" href="#version-2-3-1" title="Permalink to this headline">¶</a></h2>
+<p>(bugfix release, released on February 19th 2010)</p>
+<ul class="simple">
+<li>fixed an error reporting bug on all python versions</li>
+<li>fixed an error reporting bug on Python 2.4</li>
+</ul>
+</div>
+<div class="section" id="version-2-3">
+<h2>Version 2.3<a class="headerlink" href="#version-2-3" title="Permalink to this headline">¶</a></h2>
+<p>(codename 3000 Pythons, released on February 10th 2010)</p>
+<ul class="simple">
+<li>fixes issue with code generator that causes unbound variables
+to be generated if set was used in if-blocks and other small
+identifier problems.</li>
+<li>include tags are now able to select between multiple templates
+and take the first that exists, if a list of templates is
+given.</li>
+<li>fixed a problem with having call blocks in outer scopes that
+have an argument that is also used as local variable in an
+inner frame (#360).</li>
+<li>greatly improved error message reporting (#339)</li>
+<li>implicit tuple expressions can no longer be totally empty.
+This change makes <code class="docutils literal notranslate"><span class="pre">{%</span> <span class="pre">if</span> <span class="pre">%}...{%</span> <span class="pre">endif</span> <span class="pre">%}</span></code> a syntax error
+now. (#364)</li>
+<li>added support for translator comments if extracted via babel.</li>
+<li>added with-statement extension.</li>
+<li>experimental Python 3 support.</li>
+</ul>
+</div>
+<div class="section" id="version-2-2-1">
+<h2>Version 2.2.1<a class="headerlink" href="#version-2-2-1" title="Permalink to this headline">¶</a></h2>
+<p>(bugfix release, released on September 14th 2009)</p>
+<ul class="simple">
+<li>fixes some smaller problems for Jinja2 on Jython.</li>
+</ul>
+</div>
+<div class="section" id="version-2-2">
+<h2>Version 2.2<a class="headerlink" href="#version-2-2" title="Permalink to this headline">¶</a></h2>
+<p>(codename Kong, released on September 13th 2009)</p>
+<ul class="simple">
+<li>Include statements can now be marked with <code class="docutils literal notranslate"><span class="pre">ignore</span> <span class="pre">missing</span></code> to skip
+non existing templates.</li>
+<li>Priority of <code class="docutils literal notranslate"><span class="pre">not</span></code> raised.  It’s now possible to write <cite>not foo in bar</cite>
+as an alias to <cite>foo not in bar</cite> like in python.  Previously the grammar
+required parentheses (<cite>not (foo in bar)</cite>) which was odd.</li>
+<li>Fixed a bug that caused syntax errors when defining macros or using the
+<cite>{% call %}</cite> tag inside loops.</li>
+<li>Fixed a bug in the parser that made <code class="docutils literal notranslate"><span class="pre">{{</span> <span class="pre">foo[1,</span> <span class="pre">2]</span> <span class="pre">}}</span></code> impossible.</li>
+<li>Made it possible to refer to names from outer scopes in included templates
+that were unused in the callers frame (#327)</li>
+<li>Fixed a bug that caused internal errors if names where used as iteration
+variable and regular variable <em>after</em> the loop if that variable was unused
+<em>before</em> the loop.  (#331)</li>
+<li>Added support for optional <code class="docutils literal notranslate"><span class="pre">scoped</span></code> modifier to blocks.</li>
+<li>Added support for line-comments.</li>
+<li>Added the <code class="docutils literal notranslate"><span class="pre">meta</span></code> module.</li>
+<li>Renamed (undocumented) attribute “overlay” to “overlayed” on the
+environment because it was clashing with a method of the same name.</li>
+<li>speedup extension is now disabled by default.</li>
+</ul>
+</div>
+<div class="section" id="version-2-1-1">
+<h2>Version 2.1.1<a class="headerlink" href="#version-2-1-1" title="Permalink to this headline">¶</a></h2>
+<p>(bugfix release, released on December 25th 2008)</p>
+<ul class="simple">
+<li>Fixed a translation error caused by looping over empty recursive loops.</li>
+</ul>
+</div>
+<div class="section" id="version-2-1">
+<h2>Version 2.1<a class="headerlink" href="#version-2-1" title="Permalink to this headline">¶</a></h2>
+<p>(codename Yasuzō, released on November 23rd 2008)</p>
+<ul class="simple">
+<li>fixed a bug with nested loops and the special loop variable.  Before the
+change an inner loop overwrote the loop variable from the outer one after
+iteration.</li>
+<li>fixed a bug with the i18n extension that caused the explicit pluralization
+block to look up the wrong variable.</li>
+<li>fixed a limitation in the lexer that made <code class="docutils literal notranslate"><span class="pre">{{</span> <span class="pre">foo.0.0</span> <span class="pre">}}</span></code> impossible.</li>
+<li>index based subscribing of variables with a constant value returns an
+undefined object now instead of raising an index error.  This was a bug
+caused by eager optimizing.</li>
+<li>the i18n extension looks up <code class="docutils literal notranslate"><span class="pre">foo.ugettext</span></code> now followed by <code class="docutils literal notranslate"><span class="pre">foo.gettext</span></code>
+if an translations object is installed.  This makes dealing with custom
+translations classes easier.</li>
+<li>fixed a confusing behavior with conditional extending.  loops were partially
+executed under some conditions even though they were not part of a visible
+area.</li>
+<li>added <code class="docutils literal notranslate"><span class="pre">sort</span></code> filter that works like <code class="docutils literal notranslate"><span class="pre">dictsort</span></code> but for arbitrary sequences.</li>
+<li>fixed a bug with empty statements in macros.</li>
+<li>implemented a bytecode cache system.  (<a class="reference internal" href="api.html#bytecode-cache"><span class="std std-ref">Bytecode Cache</span></a>)</li>
+<li>the template context is now weakref-able</li>
+<li>inclusions and imports “with context” forward all variables now, not only
+the initial context.</li>
+<li>added a cycle helper called <code class="docutils literal notranslate"><span class="pre">cycler</span></code>.</li>
+<li>added a joining helper called <code class="docutils literal notranslate"><span class="pre">joiner</span></code>.</li>
+<li>added a <code class="docutils literal notranslate"><span class="pre">compile_expression</span></code> method to the environment that allows compiling
+of Jinja expressions into callable Python objects.</li>
+<li>fixed an escaping bug in urlize</li>
+</ul>
+</div>
+<div class="section" id="version-2-0">
+<h2>Version 2.0<a class="headerlink" href="#version-2-0" title="Permalink to this headline">¶</a></h2>
+<p>(codename jinjavitus, released on July 17th 2008)</p>
+<ul>
+<li><p class="first">the subscribing of objects (looking up attributes and items) changed from
+slightly.  It’s now possible to give attributes or items a higher priority
+by either using dot-notation lookup or the bracket syntax.  This also
+changed the AST slightly.  <code class="docutils literal notranslate"><span class="pre">Subscript</span></code> is gone and was replaced with
+<a class="reference internal" href="extensions.html#jinja2.nodes.Getitem" title="jinja2.nodes.Getitem"><code class="xref py py-class docutils literal notranslate"><span class="pre">Getitem</span></code></a> and <a class="reference internal" href="extensions.html#jinja2.nodes.Getattr" title="jinja2.nodes.Getattr"><code class="xref py py-class docutils literal notranslate"><span class="pre">Getattr</span></code></a>.</p>
+<p>For more information see <a class="reference internal" href="templates.html#notes-on-subscriptions"><span class="std std-ref">the implementation details</span></a>.</p>
+</li>
+<li><p class="first">added support for preprocessing and token stream filtering for extensions.
+This would allow extensions to allow simplified gettext calls in template
+data and something similar.</p>
+</li>
+<li><p class="first">added <a class="reference internal" href="api.html#jinja2.environment.TemplateStream.dump" title="jinja2.environment.TemplateStream.dump"><code class="xref py py-meth docutils literal notranslate"><span class="pre">jinja2.environment.TemplateStream.dump()</span></code></a>.</p>
+</li>
+<li><p class="first">added missing support for implicit string literal concatenation.
+<code class="docutils literal notranslate"><span class="pre">{{</span> <span class="pre">&quot;foo&quot;</span> <span class="pre">&quot;bar&quot;</span> <span class="pre">}}</span></code> is equivalent to <code class="docutils literal notranslate"><span class="pre">{{</span> <span class="pre">&quot;foobar&quot;</span> <span class="pre">}}</span></code></p>
+</li>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">else</span></code> is optional for conditional expressions.  If not given it evaluates
+to <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
+</li>
+<li><p class="first">improved error reporting for undefined values by providing a position.</p>
+</li>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">filesizeformat</span></code> filter uses decimal prefixes now per default and can be
+set to binary mode with the second parameter.</p>
+</li>
+<li><p class="first">fixed bug in finalizer</p>
+</li>
+</ul>
+</div>
+<div class="section" id="version-2-0rc1">
+<h2>Version 2.0rc1<a class="headerlink" href="#version-2-0rc1" title="Permalink to this headline">¶</a></h2>
+<p>(no codename, released on June 9th 2008)</p>
+<ul class="simple">
+<li>first release of Jinja2</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><p class="logo"><a href="index.html">
+  <img class="logo" src="_static/jinja-small.png" alt="Logo"/>
+</a></p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Jinja Changelog</a><ul>
+<li><a class="reference internal" href="#version-2-10-1">Version 2.10.1</a></li>
+<li><a class="reference internal" href="#version-2-10">Version 2.10</a></li>
+<li><a class="reference internal" href="#version-2-9-6">Version 2.9.6</a></li>
+<li><a class="reference internal" href="#version-2-9-5">Version 2.9.5</a></li>
+<li><a class="reference internal" href="#version-2-9-4">Version 2.9.4</a></li>
+<li><a class="reference internal" href="#version-2-9-3">Version 2.9.3</a></li>
+<li><a class="reference internal" href="#version-2-9-2">Version 2.9.2</a></li>
+<li><a class="reference internal" href="#version-2-9-1">Version 2.9.1</a></li>
+<li><a class="reference internal" href="#version-2-9">Version 2.9</a></li>
+<li><a class="reference internal" href="#version-2-8-1">Version 2.8.1</a></li>
+<li><a class="reference internal" href="#version-2-8">Version 2.8</a></li>
+<li><a class="reference internal" href="#version-2-7-3">Version 2.7.3</a></li>
+<li><a class="reference internal" href="#version-2-7-2">Version 2.7.2</a></li>
+<li><a class="reference internal" href="#version-2-7-1">Version 2.7.1</a></li>
+<li><a class="reference internal" href="#version-2-7">Version 2.7</a></li>
+<li><a class="reference internal" href="#version-2-6">Version 2.6</a></li>
+<li><a class="reference internal" href="#version-2-5-5">Version 2.5.5</a></li>
+<li><a class="reference internal" href="#version-2-5-4">Version 2.5.4</a></li>
+<li><a class="reference internal" href="#version-2-5-3">Version 2.5.3</a></li>
+<li><a class="reference internal" href="#version-2-5-2">Version 2.5.2</a></li>
+<li><a class="reference internal" href="#version-2-5-1">Version 2.5.1</a></li>
+<li><a class="reference internal" href="#version-2-5">Version 2.5</a></li>
+<li><a class="reference internal" href="#version-2-4-1">Version 2.4.1</a></li>
+<li><a class="reference internal" href="#version-2-4">Version 2.4</a></li>
+<li><a class="reference internal" href="#version-2-3-1">Version 2.3.1</a></li>
+<li><a class="reference internal" href="#version-2-3">Version 2.3</a></li>
+<li><a class="reference internal" href="#version-2-2-1">Version 2.2.1</a></li>
+<li><a class="reference internal" href="#version-2-2">Version 2.2</a></li>
+<li><a class="reference internal" href="#version-2-1-1">Version 2.1.1</a></li>
+<li><a class="reference internal" href="#version-2-1">Version 2.1</a></li>
+<li><a class="reference internal" href="#version-2-0">Version 2.0</a></li>
+<li><a class="reference internal" href="#version-2-0rc1">Version 2.0rc1</a></li>
+</ul>
+</li>
+</ul>
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="faq.html" title="previous chapter">Frequently Asked Questions</a></li>
+  </ul></li>
+</ul>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/changelog.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2008, Armin Ronacher.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+    </div>
+  </body>
+</html>
