@@ -1,0 +1,16 @@
+logrotate state -- version 2
+"/var/log/sssd/sssd_implicit_files.log" 2021-3-2-8:0:0
+"/var/log/dnf.librepo.log" 2021-3-2-8:0:0
+"/var/log/sssd/sssd_nss.log" 2021-3-2-8:0:0
+"/var/log/hawkey.log" 2021-3-2-8:0:0
+"/var/log/wtmp" 2021-3-2-8:0:0
+"/var/log/chrony/*.log" 2021-3-2-8:0:0
+"/var/log/sssd/sssd.log" 2021-3-2-8:0:0
+"/var/log/spooler" 2021-3-2-8:0:0
+"/var/log/btmp" 2021-3-2-8:0:0
+"/var/log/maillog" 2021-3-2-8:0:0
+"/var/log/secure" 2021-3-2-8:0:0
+"/var/log/nginx/*log" 2021-3-2-8:0:0
+"/var/log/rhsm/*.log" 2021-3-2-8:0:0
+"/var/log/messages" 2021-3-2-8:0:0
+"/var/log/cron" 2021-3-2-8:0:0
