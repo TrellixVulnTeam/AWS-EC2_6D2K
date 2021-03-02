@@ -1100,3 +1100,16 @@ Installed:
 2021-03-02T08:13:25Z DDEBUG /var/cache/dnf/rhel-8-appstream-rhui-rpms-5b7b854e98ebba59/packages/nodejs-full-i18n-10.23.1-1.module+el8.3.0+9502+012d8a97.x86_64.rpm removed
 2021-03-02T08:13:25Z DDEBUG /var/cache/dnf/rhel-8-appstream-rhui-rpms-5b7b854e98ebba59/packages/nodejs-10.23.1-1.module+el8.3.0+9502+012d8a97.x86_64.rpm removed
 2021-03-02T08:13:25Z DDEBUG /var/cache/dnf/rhel-8-appstream-rhui-rpms-5b7b854e98ebba59/packages/npm-6.14.10-1.10.23.1.1.module+el8.3.0+9502+012d8a97.x86_64.rpm removed
+2021-03-02T09:08:57Z INFO --- logging initialized ---
+2021-03-02T09:08:57Z DDEBUG timer: config: 26 ms
+2021-03-02T09:08:57Z DEBUG Loaded plugins: AmazonID, builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+2021-03-02T09:08:57Z DEBUG DNF version: 4.2.23
+2021-03-02T09:08:57Z DDEBUG Command: dnf makecache --timer 
+2021-03-02T09:08:57Z DDEBUG Installroot: /
+2021-03-02T09:08:57Z DDEBUG Releasever: 8
+2021-03-02T09:08:57Z DEBUG cachedir: /var/cache/dnf
+2021-03-02T09:08:57Z DDEBUG Base command: makecache
+2021-03-02T09:08:57Z DDEBUG Extra commands: ['makecache', '--timer']
+2021-03-02T09:08:57Z DEBUG Making cache files for all metadata files.
+2021-03-02T09:08:57Z INFO Metadata cache refreshed recently.
+2021-03-02T09:08:57Z DDEBUG Cleaning up.

@@ -20,3 +20,11 @@ Mar  2 08:31:01 ip-172-31-34-102 anacron[5069]: Job `cron.daily' started
 Mar  2 08:31:01 ip-172-31-34-102 run-parts[61855]: (/etc/cron.daily) starting logrotate
 Mar  2 08:31:01 ip-172-31-34-102 run-parts[61855]: (/etc/cron.daily) finished logrotate
 Mar  2 08:31:01 ip-172-31-34-102 anacron[5069]: Job `cron.daily' terminated
+Mar  2 08:51:01 ip-172-31-34-102 anacron[5069]: Job `cron.weekly' started
+Mar  2 08:51:01 ip-172-31-34-102 anacron[5069]: Job `cron.weekly' terminated
+Mar  2 09:01:01 ip-172-31-34-102 CROND[62287]: (root) CMD (run-parts /etc/cron.hourly)
+Mar  2 09:01:02 ip-172-31-34-102 run-parts[62287]: (/etc/cron.hourly) starting 0anacron
+Mar  2 09:01:03 ip-172-31-34-102 run-parts[62287]: (/etc/cron.hourly) finished 0anacron
+Mar  2 09:11:01 ip-172-31-34-102 anacron[5069]: Job `cron.monthly' started
+Mar  2 09:11:01 ip-172-31-34-102 anacron[5069]: Job `cron.monthly' terminated
+Mar  2 09:11:01 ip-172-31-34-102 anacron[5069]: Normal exit (3 jobs run)

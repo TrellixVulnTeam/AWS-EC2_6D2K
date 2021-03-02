@@ -22,3 +22,21 @@
 [2021-03-02 08:04:29.632] [remoteagent] [info] [127.0.0.1][ec65d6ae][ExtensionHostConnection] <5371> Launched Extension Host Process.
 [2021-03-02 08:04:33.709] [remoteagent] [error] [File Watcher (chokidar)] Inotify limit reached (ENOSPC)
 [2021-03-02 08:09:29.621] [remoteagent] [info] New EH opened, aborting shutdown
+[2021-03-02 08:57:59.300] [remoteagent] [info] [127.0.0.1][5f5a87b8][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2021-03-02 08:58:00.330] [remoteagent] [info] [127.0.0.1][ec65d6ae][ExtensionHostConnection] <5371> Extension Host Process exited with code: 0, signal: null.
+[2021-03-02 08:58:00.330] [remoteagent] [info] Last EH closed, waiting before shutting down
+[2021-03-02 08:58:06.028] [remoteagent] [info] Got delay-shutdown request while in shutdown timeout, delaying
+[2021-03-02 08:58:06.028] [remoteagent] [info] Cancelling previous shutdown timeout
+[2021-03-02 08:58:06.251] [remoteagent] [info] [127.0.0.1][be3dded9][ManagementConnection] New connection established.
+[2021-03-02 08:58:06.252] [remoteagent] [info] [127.0.0.1][3a12aa34][ExtensionHostConnection] New connection established.
+[2021-03-02 08:58:06.268] [remoteagent] [info] [127.0.0.1][3a12aa34][ExtensionHostConnection] <62225> Launched Extension Host Process.
+[2021-03-02 09:03:06.122] [remoteagent] [info] New EH opened, aborting shutdown
+[2021-03-02 09:14:36.615] [remoteagent] [info] [127.0.0.1][be3dded9][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2021-03-02 09:14:37.651] [remoteagent] [info] [127.0.0.1][3a12aa34][ExtensionHostConnection] <62225> Extension Host Process exited with code: 0, signal: null.
+[2021-03-02 09:14:37.651] [remoteagent] [info] Last EH closed, waiting before shutting down
+[2021-03-02 09:14:38.352] [remoteagent] [info] Got delay-shutdown request while in shutdown timeout, delaying
+[2021-03-02 09:14:38.352] [remoteagent] [info] Cancelling previous shutdown timeout
+[2021-03-02 09:14:38.439] [remoteagent] [info] [127.0.0.1][8b8e1b82][ManagementConnection] New connection established.
+[2021-03-02 09:14:38.439] [remoteagent] [info] [127.0.0.1][29e334fe][ExtensionHostConnection] New connection established.
+[2021-03-02 09:14:38.451] [remoteagent] [info] [127.0.0.1][29e334fe][ExtensionHostConnection] <62376> Launched Extension Host Process.
+[2021-03-02 09:14:43.974] [remoteagent] [error] [File Watcher (chokidar)] Inotify limit reached (ENOSPC)

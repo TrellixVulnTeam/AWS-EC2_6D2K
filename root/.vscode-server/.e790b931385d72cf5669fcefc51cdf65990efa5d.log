@@ -32,3 +32,28 @@ Cancelling previous shutdown timeout
 [08:04:33] [File Watcher (chokidar)] Inotify limit reached (ENOSPC)
 New EH opened, aborting shutdown
 [08:09:29] New EH opened, aborting shutdown
+[08:57:59] [127.0.0.1][5f5a87b8][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[08:58:00] [127.0.0.1][ec65d6ae][ExtensionHostConnection] <5371> Extension Host Process exited with code: 0, signal: null.
+Last EH closed, waiting before shutting down
+[08:58:00] Last EH closed, waiting before shutting down
+Got delay-shutdown request while in shutdown timeout, delaying
+[08:58:06] Got delay-shutdown request while in shutdown timeout, delaying
+Cancelling previous shutdown timeout
+[08:58:06] Cancelling previous shutdown timeout
+[08:58:06] [127.0.0.1][be3dded9][ManagementConnection] New connection established.
+[08:58:06] [127.0.0.1][3a12aa34][ExtensionHostConnection] New connection established.
+[08:58:06] [127.0.0.1][3a12aa34][ExtensionHostConnection] <62225> Launched Extension Host Process.
+New EH opened, aborting shutdown
+[09:03:06] New EH opened, aborting shutdown
+[09:14:36] [127.0.0.1][be3dded9][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[09:14:37] [127.0.0.1][3a12aa34][ExtensionHostConnection] <62225> Extension Host Process exited with code: 0, signal: null.
+Last EH closed, waiting before shutting down
+[09:14:37] Last EH closed, waiting before shutting down
+Got delay-shutdown request while in shutdown timeout, delaying
+[09:14:38] Got delay-shutdown request while in shutdown timeout, delaying
+Cancelling previous shutdown timeout
+[09:14:38] Cancelling previous shutdown timeout
+[09:14:38] [127.0.0.1][8b8e1b82][ManagementConnection] New connection established.
+[09:14:38] [127.0.0.1][29e334fe][ExtensionHostConnection] New connection established.
+[09:14:38] [127.0.0.1][29e334fe][ExtensionHostConnection] <62376> Launched Extension Host Process.
+[09:14:43] [File Watcher (chokidar)] Inotify limit reached (ENOSPC)

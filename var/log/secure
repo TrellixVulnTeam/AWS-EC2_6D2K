@@ -100,3 +100,21 @@ Mar  2 08:21:04 ip-172-31-34-102 sudo[61805]:    root : TTY=pts/0 ; PWD=/ ; USER
 Mar  2 08:21:04 ip-172-31-34-102 sudo[61805]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
 Mar  2 08:21:04 ip-172-31-34-102 sudo[61805]: pam_unix(sudo:session): session opened for user root by (uid=0)
 Mar  2 08:21:07 ip-172-31-34-102 sudo[61805]: pam_unix(sudo:session): session closed for user root
+Mar  2 08:43:39 ip-172-31-34-102 sudo[62105]:    root : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/bin/ssh-keygen -R 13.125.242.60
+Mar  2 08:43:39 ip-172-31-34-102 sudo[62105]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Mar  2 08:43:39 ip-172-31-34-102 sudo[62105]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar  2 08:43:39 ip-172-31-34-102 sudo[62105]: pam_unix(sudo:session): session closed for user root
+Mar  2 08:43:49 ip-172-31-34-102 sudo[62108]:    root : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/bin/ssh-keygen -R 13.125.242.60ec2-13-125-242-60.ap-northeast-2.compute.amazonaws.com
+Mar  2 08:43:49 ip-172-31-34-102 sudo[62108]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Mar  2 08:43:49 ip-172-31-34-102 sudo[62108]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar  2 08:43:49 ip-172-31-34-102 sudo[62108]: pam_unix(sudo:session): session closed for user root
+Mar  2 08:57:59 ip-172-31-34-102 sshd[5313]: Received disconnect from 118.131.180.250 port 60601:11: disconnected by user
+Mar  2 08:57:59 ip-172-31-34-102 sshd[5313]: Disconnected from user root 118.131.180.250 port 60601
+Mar  2 08:57:59 ip-172-31-34-102 sshd[5310]: pam_unix(sshd:session): session closed for user root
+Mar  2 08:58:05 ip-172-31-34-102 sshd[62164]: Accepted publickey for root from 118.131.180.250 port 62791 ssh2: RSA SHA256:4QZskcvxRzaVrDqKS4cgBhgDG1JYpGuAiV0xxcfm2uo
+Mar  2 08:58:05 ip-172-31-34-102 sshd[62164]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar  2 09:14:36 ip-172-31-34-102 sshd[62167]: Received disconnect from 118.131.180.250 port 62791:11: disconnected by user
+Mar  2 09:14:36 ip-172-31-34-102 sshd[62167]: Disconnected from user root 118.131.180.250 port 62791
+Mar  2 09:14:36 ip-172-31-34-102 sshd[62164]: pam_unix(sshd:session): session closed for user root
+Mar  2 09:14:38 ip-172-31-34-102 sshd[62315]: Accepted publickey for root from 118.131.180.250 port 63390 ssh2: RSA SHA256:4QZskcvxRzaVrDqKS4cgBhgDG1JYpGuAiV0xxcfm2uo
+Mar  2 09:14:38 ip-172-31-34-102 sshd[62315]: pam_unix(sshd:session): session opened for user root by (uid=0)

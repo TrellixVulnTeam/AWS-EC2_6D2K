@@ -193,3 +193,5 @@
 2021-03-02T08:13:17Z INFO Downloading: https://rhui3.ap-northeast-2.aws.ce.redhat.com/pulp/repos/content/dist/rhel8/rhui/8/x86_64/appstream/os/Packages/n/nodejs-full-i18n-10.23.1-1.module%2bel8.3.0%2b9502%2b012d8a97.x86_64.rpm
 2021-03-02T08:13:17Z INFO Downloading: https://rhui3.ap-northeast-2.aws.ce.redhat.com/pulp/repos/content/dist/rhel8/rhui/8/x86_64/appstream/os/Packages/n/nodejs-10.23.1-1.module%2bel8.3.0%2b9502%2b012d8a97.x86_64.rpm
 2021-03-02T08:13:17Z INFO Downloading: https://rhui3.ap-northeast-2.aws.ce.redhat.com/pulp/repos/content/dist/rhel8/rhui/8/x86_64/appstream/os/Packages/n/npm-6.14.10-1.10.23.1.1.module%2bel8.3.0%2b9502%2b012d8a97.x86_64.rpm
+2021-03-02T09:08:57Z INFO Librepo version: 1.12.0 with CURL_GLOBAL_ACK_EINTR support (libcurl/7.61.1 OpenSSL/1.1.1g zlib/1.2.11 brotli/1.0.6 libidn2/2.2.0 libpsl/0.20.2 (+libidn2/2.2.0) libssh/0.9.4/openssl/zlib nghttp2/1.33.0)
+2021-03-02T09:08:57Z INFO Librepo version: 1.12.0 with CURL_GLOBAL_ACK_EINTR support (libcurl/7.61.1 OpenSSL/1.1.1g zlib/1.2.11 brotli/1.0.6 libidn2/2.2.0 libpsl/0.20.2 (+libidn2/2.2.0) libssh/0.9.4/openssl/zlib nghttp2/1.33.0)

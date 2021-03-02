@@ -1748,3 +1748,331 @@ Mar  2 08:32:45 ip-172-31-34-102 kernel: [61911]     0 61911     1821       16  
 Mar  2 08:32:45 ip-172-31-34-102 kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-0.slice/session-4.scope,task=git,pid=61910,uid=0
 Mar  2 08:32:45 ip-172-31-34-102 kernel: Out of memory: Killed process 61910 (git) total-vm:487828kB, anon-rss:423192kB, file-rss:4kB, shmem-rss:0kB, UID:0
 Mar  2 08:32:45 ip-172-31-34-102 kernel: oom_reaper: reaped process 61910 (git), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
+Mar  2 08:49:11 ip-172-31-34-102 kernel: sssd_be invoked oom-killer: gfp_mask=0x6200ca(GFP_HIGHUSER_MOVABLE), order=0, oom_score_adj=0
+Mar  2 08:49:11 ip-172-31-34-102 kernel: CPU: 0 PID: 777 Comm: sssd_be Kdump: loaded Not tainted 4.18.0-240.1.1.el8_3.x86_64 #1
+Mar  2 08:49:11 ip-172-31-34-102 kernel: Hardware name: Xen HVM domU, BIOS 4.2.amazon 08/24/2006
+Mar  2 08:49:11 ip-172-31-34-102 kernel: Call Trace:
+Mar  2 08:49:11 ip-172-31-34-102 kernel: dump_stack+0x5c/0x80
+Mar  2 08:49:11 ip-172-31-34-102 kernel: dump_header+0x51/0x308
+Mar  2 08:49:11 ip-172-31-34-102 kernel: oom_kill_process.cold.28+0xb/0x10
+Mar  2 08:49:11 ip-172-31-34-102 kernel: out_of_memory+0x1c1/0x4b0
+Mar  2 08:49:11 ip-172-31-34-102 kernel: __alloc_pages_slowpath+0xc24/0xd40
+Mar  2 08:49:11 ip-172-31-34-102 kernel: __alloc_pages_nodemask+0x245/0x280
+Mar  2 08:49:11 ip-172-31-34-102 kernel: filemap_fault+0x3b8/0x840
+Mar  2 08:49:11 ip-172-31-34-102 kernel: ? __switch_to_asm+0x35/0x70
+Mar  2 08:49:11 ip-172-31-34-102 kernel: ? __switch_to_asm+0x41/0x70
+Mar  2 08:49:11 ip-172-31-34-102 kernel: ? __switch_to_asm+0x35/0x70
+Mar  2 08:49:11 ip-172-31-34-102 kernel: ? __switch_to_asm+0x41/0x70
+Mar  2 08:49:11 ip-172-31-34-102 kernel: ? __switch_to_asm+0x35/0x70
+Mar  2 08:49:11 ip-172-31-34-102 kernel: ? __switch_to_asm+0x41/0x70
+Mar  2 08:49:11 ip-172-31-34-102 kernel: ? __switch_to_asm+0x35/0x70
+Mar  2 08:49:11 ip-172-31-34-102 kernel: ? __switch_to_asm+0x41/0x70
+Mar  2 08:49:11 ip-172-31-34-102 kernel: ? __switch_to_asm+0x35/0x70
+Mar  2 08:49:11 ip-172-31-34-102 kernel: ? __switch_to_asm+0x41/0x70
+Mar  2 08:49:11 ip-172-31-34-102 kernel: ? __switch_to_asm+0x35/0x70
+Mar  2 08:49:11 ip-172-31-34-102 kernel: ? _cond_resched+0x15/0x30
+Mar  2 08:49:11 ip-172-31-34-102 kernel: __xfs_filemap_fault+0x6d/0x200 [xfs]
+Mar  2 08:49:11 ip-172-31-34-102 kernel: __do_fault+0x38/0xc0
+Mar  2 08:49:11 ip-172-31-34-102 kernel: do_fault+0x191/0x3c0
+Mar  2 08:49:11 ip-172-31-34-102 kernel: ? dequeue_signal+0xb7/0x190
+Mar  2 08:49:11 ip-172-31-34-102 kernel: __handle_mm_fault+0x3e6/0x7c0
+Mar  2 08:49:11 ip-172-31-34-102 kernel: handle_mm_fault+0xc2/0x1d0
+Mar  2 08:49:11 ip-172-31-34-102 kernel: __do_page_fault+0x21b/0x4d0
+Mar  2 08:49:11 ip-172-31-34-102 kernel: do_page_fault+0x32/0x110
+Mar  2 08:49:11 ip-172-31-34-102 kernel: ? page_fault+0x8/0x30
+Mar  2 08:49:11 ip-172-31-34-102 kernel: page_fault+0x1e/0x30
+Mar  2 08:49:11 ip-172-31-34-102 kernel: RIP: 0033:0x7f049ae451f0
+Mar  2 08:49:11 ip-172-31-34-102 kernel: Code: Bad RIP value.
+Mar  2 08:49:11 ip-172-31-34-102 kernel: RSP: 002b:00007ffc42ae47b8 EFLAGS: 00010246
+Mar  2 08:49:11 ip-172-31-34-102 kernel: RAX: 0000000000000000 RBX: 0000000000002710 RCX: 00007f04973a421b
+Mar  2 08:49:11 ip-172-31-34-102 kernel: RDX: 00007ffc42ae47c0 RSI: 00007ffc42ae48f0 RDI: 0000000000000022
+Mar  2 08:49:11 ip-172-31-34-102 kernel: RBP: 0000558a23d80040 R08: 0000558a23d58026 R09: 0000000000000006
+Mar  2 08:49:11 ip-172-31-34-102 kernel: R10: 0000000000002710 R11: 0000000000000246 R12: 00007f049ae5cd19
+Mar  2 08:49:11 ip-172-31-34-102 kernel: R13: 00007ffc42ae51c0 R14: 0000000000000000 R15: 0000000000000000
+Mar  2 08:49:11 ip-172-31-34-102 kernel: Mem-Info:
+Mar  2 08:49:11 ip-172-31-34-102 kernel: active_anon:165161 inactive_anon:384 isolated_anon:0#012 active_file:1 inactive_file:1437 isolated_file:0#012 unevictable:0 dirty:0 writeback:0 unstable:0#012 slab_reclaimable:6170 slab_unreclaimable:14132#012 mapped:1634 shmem:5644 pagetables:2415 bounce:0#012 free:10336 free_pcp:0 free_cma:0
+Mar  2 08:49:11 ip-172-31-34-102 kernel: Node 0 active_anon:660644kB inactive_anon:1536kB active_file:4kB inactive_file:5748kB unevictable:0kB isolated(anon):0kB isolated(file):0kB mapped:6536kB dirty:0kB writeback:0kB shmem:22576kB shmem_thp: 0kB shmem_pmdmapped: 0kB anon_thp: 71680kB writeback_tmp:0kB unstable:0kB all_unreclaimable? no
+Mar  2 08:49:11 ip-172-31-34-102 kernel: Node 0 DMA free:3716kB min:760kB low:948kB high:1136kB active_anon:10972kB inactive_anon:0kB active_file:0kB inactive_file:0kB unevictable:0kB writepending:0kB present:15988kB managed:15360kB mlocked:0kB kernel_stack:0kB pagetables:68kB bounce:0kB free_pcp:0kB local_pcp:0kB free_cma:0kB
+Mar  2 08:49:11 ip-172-31-34-102 kernel: lowmem_reserve[]: 0 740 740 740 740
+Mar  2 08:49:11 ip-172-31-34-102 kernel: Node 0 DMA32 free:37628kB min:37668kB low:47084kB high:56500kB active_anon:649672kB inactive_anon:1536kB active_file:4kB inactive_file:5748kB unevictable:0kB writepending:0kB present:1032192kB managed:809792kB mlocked:0kB kernel_stack:2624kB pagetables:9592kB bounce:0kB free_pcp:0kB local_pcp:0kB free_cma:0kB
+Mar  2 08:49:11 ip-172-31-34-102 kernel: lowmem_reserve[]: 0 0 0 0 0
+Mar  2 08:49:11 ip-172-31-34-102 kernel: Node 0 DMA: 15*4kB (U) 17*8kB (UM) 10*16kB (U) 9*32kB (UM) 4*64kB (U) 4*128kB (UM) 3*256kB (UM) 3*512kB (UM) 0*1024kB 0*2048kB 0*4096kB = 3716kB
+Mar  2 08:49:11 ip-172-31-34-102 kernel: Node 0 DMA32: 1552*4kB (UME) 1063*8kB (UME) 564*16kB (UME) 243*32kB (UME) 64*64kB (UME) 8*128kB (UM) 2*256kB (M) 1*512kB (M) 0*1024kB 0*2048kB 0*4096kB = 37656kB
+Mar  2 08:49:11 ip-172-31-34-102 kernel: Node 0 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=2048kB
+Mar  2 08:49:11 ip-172-31-34-102 kernel: 7081 total pagecache pages
+Mar  2 08:49:11 ip-172-31-34-102 kernel: 0 pages in swap cache
+Mar  2 08:49:11 ip-172-31-34-102 kernel: Swap cache stats: add 0, delete 0, find 0/0
+Mar  2 08:49:11 ip-172-31-34-102 kernel: Free swap  = 0kB
+Mar  2 08:49:11 ip-172-31-34-102 kernel: Total swap = 0kB
+Mar  2 08:49:11 ip-172-31-34-102 kernel: 262045 pages RAM
+Mar  2 08:49:11 ip-172-31-34-102 kernel: 0 pages HighMem/MovableOnly
+Mar  2 08:49:11 ip-172-31-34-102 kernel: 55757 pages reserved
+Mar  2 08:49:11 ip-172-31-34-102 kernel: 0 pages hwpoisoned
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [ pid ]   uid  tgid total_vm      rss pgtables_bytes swapents oom_score_adj name
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [  601]     0   601    28148     1701   258048        0             0 systemd-journal
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [  656]     0   656    19242      165   155648        0         -1000 auditd
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [  723]   998   723   402498     1750   348160        0             0 polkitd
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [  728]    81   728    21348      339   172032        0          -900 dbus-daemon
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [  741]   995   741    29968      113   147456        0             0 chronyd
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [  758]     0   758    48441      508   417792        0             0 sssd
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [  766]   994   766    40028      204   200704        0             0 rngd
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [  777]     0   777    50635      731   430080        0             0 sssd_be
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [  782]     0   782    53987      423   458752        0             0 sssd_nss
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [  810]     0   810    25005      836   212992        0             0 systemd-logind
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [  856]     0   856    97879      646   372736        0             0 NetworkManager
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [ 1097]     0  1097    55471     1543   192512        0             0 rsyslogd
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [ 1101]     0  1101     4050       33    69632        0             0 agetty
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [ 1102]     0  1102     3408       29    61440        0             0 agetty
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [ 5069]     0  5069     8998       75   102400        0             0 anacron
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [ 5115]     0  5115    23072      232   204800        0         -1000 sshd
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [ 5120]     0  5120    23476      357   229376        0             0 systemd
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [ 5124]     0  5124    60743     1180   327680        0             0 (sd-pam)
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [ 5201]     0  5201     3175       61    73728        0             0 sh
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [ 5208]     0  5208   207511     6431  1200128        0             0 node
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [ 5310]     0  5310    40925      313   319488        0             0 sshd
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [ 5313]     0  5313    41682     1098   319488        0             0 sshd
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [ 5314]     0  5314     3241      117    73728        0             0 bash
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [ 5371]     0  5371   241208    27623  3407872        0             0 node
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [ 5378]     0  5378   202939     6488   876544        0             0 node
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [ 5395]     0  5395     6546      151    81920        0             0 bash
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [ 5465]     0  5465     9231      219   102400        0             0 crond
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [12237]     0 12237   106573     3718   446464        0             0 tuned
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [16456]     0 16456    26897      596   225280        0         -1000 systemd-udevd
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [61773]     0 61773   151500    11338  1122304        0             0 node
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [61837]     0 61837     6546      148    81920        0             0 bash
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [62118]     0 62118     1821       15    61440        0             0 sleep
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [62124]     0 62124     8077      623    90112        0             0 git
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [62125]     0 62125    14323      192   147456        0             0 ssh
+Mar  2 08:49:11 ip-172-31-34-102 kernel: [62127]     0 62127   102638    90439   827392        0             0 git
+Mar  2 08:49:11 ip-172-31-34-102 kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-0.slice/session-4.scope,task=git,pid=62127,uid=0
+Mar  2 08:49:11 ip-172-31-34-102 kernel: Out of memory: Killed process 62127 (git) total-vm:410552kB, anon-rss:361752kB, file-rss:4kB, shmem-rss:0kB, UID:0
+Mar  2 08:53:17 ip-172-31-34-102 kernel: node invoked oom-killer: gfp_mask=0x6200ca(GFP_HIGHUSER_MOVABLE), order=0, oom_score_adj=0
+Mar  2 08:53:18 ip-172-31-34-102 kernel: CPU: 0 PID: 5371 Comm: node Kdump: loaded Not tainted 4.18.0-240.1.1.el8_3.x86_64 #1
+Mar  2 08:53:18 ip-172-31-34-102 kernel: Hardware name: Xen HVM domU, BIOS 4.2.amazon 08/24/2006
+Mar  2 08:53:18 ip-172-31-34-102 kernel: Call Trace:
+Mar  2 08:53:18 ip-172-31-34-102 kernel: dump_stack+0x5c/0x80
+Mar  2 08:53:18 ip-172-31-34-102 kernel: dump_header+0x51/0x308
+Mar  2 08:53:18 ip-172-31-34-102 kernel: oom_kill_process.cold.28+0xb/0x10
+Mar  2 08:53:18 ip-172-31-34-102 kernel: out_of_memory+0x1c1/0x4b0
+Mar  2 08:53:18 ip-172-31-34-102 kernel: __alloc_pages_slowpath+0xc24/0xd40
+Mar  2 08:53:18 ip-172-31-34-102 kernel: __alloc_pages_nodemask+0x245/0x280
+Mar  2 08:53:18 ip-172-31-34-102 kernel: filemap_fault+0x3b8/0x840
+Mar  2 08:53:18 ip-172-31-34-102 kernel: ? __mod_lruvec_state+0x44/0x110
+Mar  2 08:53:18 ip-172-31-34-102 kernel: ? page_add_file_rmap+0x103/0x170
+Mar  2 08:53:18 ip-172-31-34-102 kernel: ? __switch_to_asm+0x41/0x70
+Mar  2 08:53:18 ip-172-31-34-102 kernel: ? alloc_set_pte+0x203/0x480
+Mar  2 08:53:18 ip-172-31-34-102 kernel: ? _cond_resched+0x15/0x30
+Mar  2 08:53:18 ip-172-31-34-102 kernel: __xfs_filemap_fault+0x6d/0x200 [xfs]
+Mar  2 08:53:18 ip-172-31-34-102 kernel: __do_fault+0x38/0xc0
+Mar  2 08:53:18 ip-172-31-34-102 kernel: do_fault+0x191/0x3c0
+Mar  2 08:53:18 ip-172-31-34-102 kernel: __handle_mm_fault+0x3e6/0x7c0
+Mar  2 08:53:18 ip-172-31-34-102 kernel: ? hrtimer_init_sleeper+0x90/0x90
+Mar  2 08:53:18 ip-172-31-34-102 kernel: handle_mm_fault+0xc2/0x1d0
+Mar  2 08:53:18 ip-172-31-34-102 kernel: __do_page_fault+0x21b/0x4d0
+Mar  2 08:53:18 ip-172-31-34-102 kernel: do_page_fault+0x32/0x110
+Mar  2 08:53:18 ip-172-31-34-102 kernel: ? page_fault+0x8/0x30
+Mar  2 08:53:18 ip-172-31-34-102 kernel: page_fault+0x1e/0x30
+Mar  2 08:53:18 ip-172-31-34-102 kernel: RIP: 0033:0x9704a0
+Mar  2 08:53:18 ip-172-31-34-102 kernel: Code: Bad RIP value.
+Mar  2 08:53:18 ip-172-31-34-102 kernel: RSP: 002b:00007ffd53f78368 EFLAGS: 00010246
+Mar  2 08:53:18 ip-172-31-34-102 kernel: RAX: 00000000009704a0 RBX: 0000000003228408 RCX: 00000000029fd7c8
+Mar  2 08:53:18 ip-172-31-34-102 kernel: RDX: 000000000032cc0b RSI: 431bde82d7b634db RDI: 00000000032283a0
+Mar  2 08:53:18 ip-172-31-34-102 kernel: RBP: 00007ffd53f78390 R08: 0000000000000008 R09: 00000000029fd5c0
+Mar  2 08:53:18 ip-172-31-34-102 kernel: R10: 0000000003228408 R11: 0000000000000000 R12: 00000000032283a0
+Mar  2 08:53:18 ip-172-31-34-102 kernel: R13: 00000000029fd5c0 R14: 0000000000000000 R15: 0000000000000000
+Mar  2 08:53:18 ip-172-31-34-102 kernel: Mem-Info:
+Mar  2 08:53:18 ip-172-31-34-102 kernel: active_anon:165880 inactive_anon:384 isolated_anon:0#012 active_file:0 inactive_file:9 isolated_file:0#012 unevictable:0 dirty:0 writeback:0 unstable:0#012 slab_reclaimable:6181 slab_unreclaimable:14153#012 mapped:1657 shmem:5644 pagetables:2417 bounce:0#012 free:10330 free_pcp:14 free_cma:0
+Mar  2 08:53:18 ip-172-31-34-102 kernel: Node 0 active_anon:663520kB inactive_anon:1536kB active_file:0kB inactive_file:36kB unevictable:0kB isolated(anon):0kB isolated(file):0kB mapped:6628kB dirty:0kB writeback:0kB shmem:22576kB shmem_thp: 0kB shmem_pmdmapped: 0kB anon_thp: 83968kB writeback_tmp:0kB unstable:0kB all_unreclaimable? no
+Mar  2 08:53:18 ip-172-31-34-102 kernel: Node 0 DMA free:3720kB min:760kB low:948kB high:1136kB active_anon:11016kB inactive_anon:0kB active_file:0kB inactive_file:0kB unevictable:0kB writepending:0kB present:15988kB managed:15360kB mlocked:0kB kernel_stack:0kB pagetables:60kB bounce:0kB free_pcp:0kB local_pcp:0kB free_cma:0kB
+Mar  2 08:53:18 ip-172-31-34-102 kernel: lowmem_reserve[]: 0 740 740 740 740
+Mar  2 08:53:18 ip-172-31-34-102 kernel: Node 0 DMA32 free:37600kB min:37668kB low:47084kB high:56500kB active_anon:652504kB inactive_anon:1536kB active_file:0kB inactive_file:36kB unevictable:0kB writepending:0kB present:1032192kB managed:809792kB mlocked:0kB kernel_stack:2640kB pagetables:9608kB bounce:0kB free_pcp:56kB local_pcp:56kB free_cma:0kB
+Mar  2 08:53:18 ip-172-31-34-102 kernel: lowmem_reserve[]: 0 0 0 0 0
+Mar  2 08:53:18 ip-172-31-34-102 kernel: Node 0 DMA: 16*4kB (UE) 15*8kB (UME) 11*16kB (UE) 11*32kB (UME) 5*64kB (UE) 5*128kB (UME) 2*256kB (ME) 1*512kB (M) 1*1024kB (E) 0*2048kB 0*4096kB = 3720kB
+Mar  2 08:53:18 ip-172-31-34-102 kernel: Node 0 DMA32: 1392*4kB (UE) 1022*8kB (UE) 563*16kB (UME) 252*32kB (UE) 74*64kB (UE) 16*128kB (UM) 0*256kB 0*512kB 0*1024kB 0*2048kB 0*4096kB = 37600kB
+Mar  2 08:53:18 ip-172-31-34-102 kernel: Node 0 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=2048kB
+Mar  2 08:53:18 ip-172-31-34-102 kernel: 5653 total pagecache pages
+Mar  2 08:53:18 ip-172-31-34-102 kernel: 0 pages in swap cache
+Mar  2 08:53:18 ip-172-31-34-102 kernel: Swap cache stats: add 0, delete 0, find 0/0
+Mar  2 08:53:18 ip-172-31-34-102 kernel: Free swap  = 0kB
+Mar  2 08:53:18 ip-172-31-34-102 kernel: Total swap = 0kB
+Mar  2 08:53:18 ip-172-31-34-102 kernel: 262045 pages RAM
+Mar  2 08:53:18 ip-172-31-34-102 kernel: 0 pages HighMem/MovableOnly
+Mar  2 08:53:18 ip-172-31-34-102 kernel: 55757 pages reserved
+Mar  2 08:53:18 ip-172-31-34-102 kernel: 0 pages hwpoisoned
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [ pid ]   uid  tgid total_vm      rss pgtables_bytes swapents oom_score_adj name
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [  601]     0   601    28148     1730   258048        0             0 systemd-journal
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [  656]     0   656    19242      165   155648        0         -1000 auditd
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [  723]   998   723   402498     1750   348160        0             0 polkitd
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [  728]    81   728    21348      339   172032        0          -900 dbus-daemon
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [  741]   995   741    29968      134   147456        0             0 chronyd
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [  758]     0   758    48441      508   417792        0             0 sssd
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [  766]   994   766    40028      204   200704        0             0 rngd
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [  777]     0   777    50635      731   430080        0             0 sssd_be
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [  782]     0   782    53987      423   458752        0             0 sssd_nss
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [  810]     0   810    25005      836   212992        0             0 systemd-logind
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [  856]     0   856    97879      659   372736        0             0 NetworkManager
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [ 1097]     0  1097    55471     1543   192512        0             0 rsyslogd
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [ 1101]     0  1101     4050       33    69632        0             0 agetty
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [ 1102]     0  1102     3408       29    61440        0             0 agetty
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [ 5069]     0  5069     8998       75   102400        0             0 anacron
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [ 5115]     0  5115    23072      232   204800        0         -1000 sshd
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [ 5120]     0  5120    23476      357   229376        0             0 systemd
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [ 5124]     0  5124    60743     1180   327680        0             0 (sd-pam)
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [ 5201]     0  5201     3175       61    73728        0             0 sh
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [ 5208]     0  5208   207511     6473  1200128        0             0 node
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [ 5310]     0  5310    40925      313   319488        0             0 sshd
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [ 5313]     0  5313    41682     1098   319488        0             0 sshd
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [ 5314]     0  5314     3241      117    73728        0             0 bash
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [ 5371]     0  5371   241208    27634  3407872        0             0 node
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [ 5378]     0  5378   202939     6491   876544        0             0 node
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [ 5395]     0  5395     6546      151    81920        0             0 bash
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [ 5465]     0  5465     9231      219   102400        0             0 crond
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [12237]     0 12237   106573     3718   446464        0             0 tuned
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [16456]     0 16456    26897      596   225280        0         -1000 systemd-udevd
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [61773]     0 61773   151500    11395  1126400        0             0 node
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [61837]     0 61837     6546      148    81920        0             0 bash
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [62147]     0 62147     8077      112    94208        0             0 git
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [62148]     0 62148    14323      194   139264        0             0 ssh
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [62150]     0 62150   102638    91700   847872        0             0 git
+Mar  2 08:53:18 ip-172-31-34-102 kernel: [62151]     0 62151     1821       16    61440        0             0 sleep
+Mar  2 08:53:18 ip-172-31-34-102 kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-0.slice/session-4.scope,task=git,pid=62150,uid=0
+Mar  2 08:53:18 ip-172-31-34-102 kernel: Out of memory: Killed process 62150 (git) total-vm:410552kB, anon-rss:366796kB, file-rss:4kB, shmem-rss:0kB, UID:0
+Mar  2 08:53:18 ip-172-31-34-102 kernel: oom_reaper: reaped process 62150 (git), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
+Mar  2 08:56:42 ip-172-31-34-102 kernel: node invoked oom-killer: gfp_mask=0x6200ca(GFP_HIGHUSER_MOVABLE), order=0, oom_score_adj=0
+Mar  2 08:56:42 ip-172-31-34-102 kernel: CPU: 0 PID: 5371 Comm: node Kdump: loaded Not tainted 4.18.0-240.1.1.el8_3.x86_64 #1
+Mar  2 08:56:42 ip-172-31-34-102 kernel: Hardware name: Xen HVM domU, BIOS 4.2.amazon 08/24/2006
+Mar  2 08:56:42 ip-172-31-34-102 kernel: Call Trace:
+Mar  2 08:56:42 ip-172-31-34-102 kernel: dump_stack+0x5c/0x80
+Mar  2 08:56:42 ip-172-31-34-102 kernel: dump_header+0x51/0x308
+Mar  2 08:56:42 ip-172-31-34-102 kernel: oom_kill_process.cold.28+0xb/0x10
+Mar  2 08:56:42 ip-172-31-34-102 kernel: out_of_memory+0x1c1/0x4b0
+Mar  2 08:56:42 ip-172-31-34-102 kernel: __alloc_pages_slowpath+0xc24/0xd40
+Mar  2 08:56:42 ip-172-31-34-102 kernel: __alloc_pages_nodemask+0x245/0x280
+Mar  2 08:56:42 ip-172-31-34-102 kernel: filemap_fault+0x3b8/0x840
+Mar  2 08:56:42 ip-172-31-34-102 kernel: ? __mod_lruvec_state+0x44/0x110
+Mar  2 08:56:42 ip-172-31-34-102 kernel: ? page_add_file_rmap+0x103/0x170
+Mar  2 08:56:42 ip-172-31-34-102 kernel: ? __switch_to_asm+0x41/0x70
+Mar  2 08:56:42 ip-172-31-34-102 kernel: ? alloc_set_pte+0x203/0x480
+Mar  2 08:56:42 ip-172-31-34-102 kernel: ? _cond_resched+0x15/0x30
+Mar  2 08:56:42 ip-172-31-34-102 kernel: __xfs_filemap_fault+0x6d/0x200 [xfs]
+Mar  2 08:56:42 ip-172-31-34-102 kernel: __do_fault+0x38/0xc0
+Mar  2 08:56:42 ip-172-31-34-102 kernel: do_fault+0x191/0x3c0
+Mar  2 08:56:42 ip-172-31-34-102 kernel: __handle_mm_fault+0x3e6/0x7c0
+Mar  2 08:56:42 ip-172-31-34-102 kernel: ? hrtimer_init_sleeper+0x90/0x90
+Mar  2 08:56:42 ip-172-31-34-102 kernel: handle_mm_fault+0xc2/0x1d0
+Mar  2 08:56:42 ip-172-31-34-102 kernel: __do_page_fault+0x21b/0x4d0
+Mar  2 08:56:42 ip-172-31-34-102 kernel: do_page_fault+0x32/0x110
+Mar  2 08:56:42 ip-172-31-34-102 kernel: ? page_fault+0x8/0x30
+Mar  2 08:56:42 ip-172-31-34-102 kernel: page_fault+0x1e/0x30
+Mar  2 08:56:42 ip-172-31-34-102 kernel: RIP: 0033:0x12e9dc3
+Mar  2 08:56:42 ip-172-31-34-102 kernel: Code: Bad RIP value.
+Mar  2 08:56:42 ip-172-31-34-102 kernel: RSP: 002b:00007ffd53f75290 EFLAGS: 00010206
+Mar  2 08:56:42 ip-172-31-34-102 kernel: RAX: 0000000000000000 RBX: 00007ff312f346c8 RCX: 00007ff311cff257
+Mar  2 08:56:42 ip-172-31-34-102 kernel: RDX: 0000000035ff8d32 RSI: 00007ffd53f752d0 RDI: 0000000000000006
+Mar  2 08:56:42 ip-172-31-34-102 kernel: RBP: 00007ffd53f78390 R08: 0000000000000000 R09: 00000000000082d5
+Mar  2 08:56:42 ip-172-31-34-102 kernel: R10: 0000000000000068 R11: 0000000000000006 R12: 0000000000000068
+Mar  2 08:56:42 ip-172-31-34-102 kernel: R13: 0000000000000000 R14: 00000000029fd5c0 R15: 0000000000000002
+Mar  2 08:56:42 ip-172-31-34-102 kernel: Mem-Info:
+Mar  2 08:56:42 ip-172-31-34-102 kernel: active_anon:166063 inactive_anon:384 isolated_anon:0#012 active_file:7 inactive_file:1 isolated_file:0#012 unevictable:0 dirty:0 writeback:0 unstable:0#012 slab_reclaimable:6187 slab_unreclaimable:14140#012 mapped:1654 shmem:5644 pagetables:2425 bounce:0#012 free:10339 free_pcp:62 free_cma:0
+Mar  2 08:56:42 ip-172-31-34-102 kernel: Node 0 active_anon:664252kB inactive_anon:1536kB active_file:28kB inactive_file:4kB unevictable:0kB isolated(anon):0kB isolated(file):0kB mapped:6616kB dirty:0kB writeback:0kB shmem:22576kB shmem_thp: 0kB shmem_pmdmapped: 0kB anon_thp: 86016kB writeback_tmp:0kB unstable:0kB all_unreclaimable? no
+Mar  2 08:56:42 ip-172-31-34-102 kernel: Node 0 DMA free:3712kB min:760kB low:948kB high:1136kB active_anon:10840kB inactive_anon:0kB active_file:0kB inactive_file:0kB unevictable:0kB writepending:0kB present:15988kB managed:15360kB mlocked:0kB kernel_stack:0kB pagetables:56kB bounce:0kB free_pcp:0kB local_pcp:0kB free_cma:0kB
+Mar  2 08:56:42 ip-172-31-34-102 kernel: lowmem_reserve[]: 0 740 740 740 740
+Mar  2 08:56:42 ip-172-31-34-102 kernel: Node 0 DMA32 free:37644kB min:37668kB low:47084kB high:56500kB active_anon:653412kB inactive_anon:1536kB active_file:28kB inactive_file:4kB unevictable:0kB writepending:0kB present:1032192kB managed:809792kB mlocked:0kB kernel_stack:2624kB pagetables:9644kB bounce:0kB free_pcp:248kB local_pcp:248kB free_cma:0kB
+Mar  2 08:56:42 ip-172-31-34-102 kernel: lowmem_reserve[]: 0 0 0 0 0
+Mar  2 08:56:42 ip-172-31-34-102 kernel: Node 0 DMA: 14*4kB (UE) 15*8kB (UME) 13*16kB (UME) 10*32kB (UE) 5*64kB (UE) 5*128kB (UME) 2*256kB (ME) 1*512kB (M) 1*1024kB (E) 0*2048kB 0*4096kB = 3712kB
+Mar  2 08:56:42 ip-172-31-34-102 kernel: Node 0 DMA32: 1413*4kB (UME) 1049*8kB (UME) 579*16kB (UE) 242*32kB (UME) 73*64kB (UE) 15*128kB (UME) 0*256kB 0*512kB 0*1024kB 0*2048kB 0*4096kB = 37644kB
+Mar  2 08:56:42 ip-172-31-34-102 kernel: Node 0 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=2048kB
+Mar  2 08:56:42 ip-172-31-34-102 kernel: 5649 total pagecache pages
+Mar  2 08:56:42 ip-172-31-34-102 kernel: 0 pages in swap cache
+Mar  2 08:56:42 ip-172-31-34-102 kernel: Swap cache stats: add 0, delete 0, find 0/0
+Mar  2 08:56:42 ip-172-31-34-102 kernel: Free swap  = 0kB
+Mar  2 08:56:42 ip-172-31-34-102 kernel: Total swap = 0kB
+Mar  2 08:56:42 ip-172-31-34-102 kernel: 262045 pages RAM
+Mar  2 08:56:42 ip-172-31-34-102 kernel: 0 pages HighMem/MovableOnly
+Mar  2 08:56:42 ip-172-31-34-102 kernel: 55757 pages reserved
+Mar  2 08:56:42 ip-172-31-34-102 kernel: 0 pages hwpoisoned
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [ pid ]   uid  tgid total_vm      rss pgtables_bytes swapents oom_score_adj name
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [  601]     0   601    28148     1730   258048        0             0 systemd-journal
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [  656]     0   656    19242      165   155648        0         -1000 auditd
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [  723]   998   723   402498     1750   348160        0             0 polkitd
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [  728]    81   728    21348      339   172032        0          -900 dbus-daemon
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [  741]   995   741    29968      134   147456        0             0 chronyd
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [  758]     0   758    48441      508   417792        0             0 sssd
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [  766]   994   766    40028      204   200704        0             0 rngd
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [  777]     0   777    50635      731   430080        0             0 sssd_be
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [  782]     0   782    53987      423   458752        0             0 sssd_nss
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [  810]     0   810    25005      836   212992        0             0 systemd-logind
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [  856]     0   856    97879      659   372736        0             0 NetworkManager
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [ 1097]     0  1097    55471     1579   192512        0             0 rsyslogd
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [ 1101]     0  1101     4050       33    69632        0             0 agetty
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [ 1102]     0  1102     3408       29    61440        0             0 agetty
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [ 5069]     0  5069     8998       75   102400        0             0 anacron
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [ 5115]     0  5115    23072      232   204800        0         -1000 sshd
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [ 5120]     0  5120    23476      357   229376        0             0 systemd
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [ 5124]     0  5124    60743     1180   327680        0             0 (sd-pam)
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [ 5201]     0  5201     3175       61    73728        0             0 sh
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [ 5208]     0  5208   207511     6575  1200128        0             0 node
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [ 5310]     0  5310    40925      313   319488        0             0 sshd
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [ 5313]     0  5313    41682     1098   319488        0             0 sshd
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [ 5314]     0  5314     3241      116    73728        0             0 bash
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [ 5371]     0  5371   241272    27664  3416064        0             0 node
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [ 5378]     0  5378   202939     6491   876544        0             0 node
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [ 5395]     0  5395     6546      153    81920        0             0 bash
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [ 5465]     0  5465     9231      219   102400        0             0 crond
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [12237]     0 12237   106573     3718   446464        0             0 tuned
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [16456]     0 16456    26897      596   225280        0         -1000 systemd-udevd
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [61773]     0 61773   151500    11402  1126400        0             0 node
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [61837]     0 61837     6546      148    81920        0             0 bash
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [62158]     0 62158     8077      113    98304        0             0 git
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [62159]     0 62159    14323      192   147456        0             0 ssh
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [62161]     0 62161   102638    91708   839680        0             0 git
+Mar  2 08:56:42 ip-172-31-34-102 kernel: [62162]     0 62162     1821       15    61440        0             0 sleep
+Mar  2 08:56:42 ip-172-31-34-102 kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-0.slice/session-4.scope,task=git,pid=62161,uid=0
+Mar  2 08:56:42 ip-172-31-34-102 kernel: Out of memory: Killed process 62161 (git) total-vm:410552kB, anon-rss:366828kB, file-rss:4kB, shmem-rss:0kB, UID:0
+Mar  2 08:56:42 ip-172-31-34-102 kernel: oom_reaper: reaped process 62161 (git), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
+Mar  2 08:57:59 ip-172-31-34-102 systemd-logind[810]: Session 6 logged out. Waiting for processes to exit.
+Mar  2 08:58:05 ip-172-31-34-102 systemd[1]: Started Session 7 of user root.
+Mar  2 08:58:05 ip-172-31-34-102 systemd-logind[810]: New session 7 of user root.
+Mar  2 08:58:29 ip-172-31-34-102 systemd[1]: session-6.scope: Succeeded.
+Mar  2 08:58:29 ip-172-31-34-102 systemd-logind[810]: Removed session 6.
+Mar  2 08:58:53 ip-172-31-34-102 NetworkManager[856]: <info>  [1614675533.2724] dhcp4 (eth0): option dhcp_lease_time      => '3600'
+Mar  2 08:58:53 ip-172-31-34-102 NetworkManager[856]: <info>  [1614675533.2737] dhcp4 (eth0): option domain_name          => 'ap-northeast-2.compute.internal'
+Mar  2 08:58:53 ip-172-31-34-102 NetworkManager[856]: <info>  [1614675533.2738] dhcp4 (eth0): option domain_name_servers  => '172.31.0.2'
+Mar  2 08:58:53 ip-172-31-34-102 NetworkManager[856]: <info>  [1614675533.2738] dhcp4 (eth0): option expiry               => '1614679133'
+Mar  2 08:58:53 ip-172-31-34-102 NetworkManager[856]: <info>  [1614675533.2738] dhcp4 (eth0): option host_name            => 'ip-172-31-34-102'
+Mar  2 08:58:53 ip-172-31-34-102 NetworkManager[856]: <info>  [1614675533.2738] dhcp4 (eth0): option interface_mtu        => '9001'
+Mar  2 08:58:53 ip-172-31-34-102 NetworkManager[856]: <info>  [1614675533.2738] dhcp4 (eth0): option ip_address           => '172.31.34.102'
+Mar  2 08:58:53 ip-172-31-34-102 NetworkManager[856]: <info>  [1614675533.2738] dhcp4 (eth0): option requested_broadcast_address => '1'
+Mar  2 08:58:53 ip-172-31-34-102 NetworkManager[856]: <info>  [1614675533.2738] dhcp4 (eth0): option requested_domain_name => '1'
+Mar  2 08:58:53 ip-172-31-34-102 NetworkManager[856]: <info>  [1614675533.2738] dhcp4 (eth0): option requested_domain_name_servers => '1'
+Mar  2 08:58:53 ip-172-31-34-102 NetworkManager[856]: <info>  [1614675533.2738] dhcp4 (eth0): option requested_domain_search => '1'
+Mar  2 08:58:53 ip-172-31-34-102 NetworkManager[856]: <info>  [1614675533.2738] dhcp4 (eth0): option requested_host_name  => '1'
+Mar  2 08:58:53 ip-172-31-34-102 NetworkManager[856]: <info>  [1614675533.2738] dhcp4 (eth0): option requested_interface_mtu => '1'
+Mar  2 08:58:53 ip-172-31-34-102 NetworkManager[856]: <info>  [1614675533.2739] dhcp4 (eth0): option requested_ms_classless_static_routes => '1'
+Mar  2 08:58:53 ip-172-31-34-102 NetworkManager[856]: <info>  [1614675533.2739] dhcp4 (eth0): option requested_nis_domain => '1'
+Mar  2 08:58:53 ip-172-31-34-102 NetworkManager[856]: <info>  [1614675533.2739] dhcp4 (eth0): option requested_nis_servers => '1'
+Mar  2 08:58:53 ip-172-31-34-102 NetworkManager[856]: <info>  [1614675533.2739] dhcp4 (eth0): option requested_ntp_servers => '1'
+Mar  2 08:58:53 ip-172-31-34-102 NetworkManager[856]: <info>  [1614675533.2739] dhcp4 (eth0): option requested_rfc3442_classless_static_routes => '1'
+Mar  2 08:58:53 ip-172-31-34-102 NetworkManager[856]: <info>  [1614675533.2739] dhcp4 (eth0): option requested_root_path  => '1'
+Mar  2 08:58:53 ip-172-31-34-102 NetworkManager[856]: <info>  [1614675533.2739] dhcp4 (eth0): option requested_routers    => '1'
+Mar  2 08:58:53 ip-172-31-34-102 NetworkManager[856]: <info>  [1614675533.2739] dhcp4 (eth0): option requested_static_routes => '1'
+Mar  2 08:58:53 ip-172-31-34-102 NetworkManager[856]: <info>  [1614675533.2739] dhcp4 (eth0): option requested_subnet_mask => '1'
+Mar  2 08:58:53 ip-172-31-34-102 NetworkManager[856]: <info>  [1614675533.2739] dhcp4 (eth0): option requested_time_offset => '1'
+Mar  2 08:58:53 ip-172-31-34-102 NetworkManager[856]: <info>  [1614675533.2739] dhcp4 (eth0): option requested_wpad       => '1'
+Mar  2 08:58:53 ip-172-31-34-102 NetworkManager[856]: <info>  [1614675533.2739] dhcp4 (eth0): option routers              => '172.31.32.1'
+Mar  2 08:58:53 ip-172-31-34-102 NetworkManager[856]: <info>  [1614675533.2739] dhcp4 (eth0): option subnet_mask          => '255.255.240.0'
+Mar  2 08:58:53 ip-172-31-34-102 NetworkManager[856]: <info>  [1614675533.2739] dhcp4 (eth0): state changed extended -> extended
+Mar  2 08:58:53 ip-172-31-34-102 dbus-daemon[728]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.9' (uid=0 pid=856 comm="/usr/sbin/NetworkManager --no-daemon " label="system_u:system_r:NetworkManager_t:s0")
+Mar  2 08:58:53 ip-172-31-34-102 systemd[1]: Starting Network Manager Script Dispatcher Service...
+Mar  2 08:58:53 ip-172-31-34-102 dbus-daemon[728]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Mar  2 08:58:53 ip-172-31-34-102 systemd[1]: Started Network Manager Script Dispatcher Service.
+Mar  2 08:59:03 ip-172-31-34-102 systemd[1]: NetworkManager-dispatcher.service: Succeeded.
+Mar  2 09:08:56 ip-172-31-34-102 systemd[1]: Starting dnf makecache...
+Mar  2 09:08:57 ip-172-31-34-102 dnf[62300]: Metadata cache refreshed recently.
+Mar  2 09:08:57 ip-172-31-34-102 systemd[1]: dnf-makecache.service: Succeeded.
+Mar  2 09:08:57 ip-172-31-34-102 systemd[1]: Started dnf makecache.
+Mar  2 09:14:36 ip-172-31-34-102 systemd-logind[810]: Session 7 logged out. Waiting for processes to exit.
+Mar  2 09:14:38 ip-172-31-34-102 systemd[1]: Started Session 8 of user root.
+Mar  2 09:14:38 ip-172-31-34-102 systemd-logind[810]: New session 8 of user root.
+Mar  2 09:16:06 ip-172-31-34-102 systemd[1]: session-7.scope: Succeeded.
+Mar  2 09:16:06 ip-172-31-34-102 systemd-logind[810]: Removed session 7.
